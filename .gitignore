@@ -22,11 +22,10 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 
-.DS_Store
+DS_Store
 ._.DS_Store
 **/.DS_Store
 **/._.DS_Store
-
 
 
 ## Obj-C/Swift specific
