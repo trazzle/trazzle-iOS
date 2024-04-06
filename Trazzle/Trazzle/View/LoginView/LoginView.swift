@@ -13,6 +13,9 @@ struct LoginView: View {
     var body: some View {
         ZStack(alignment: .top) {
             
+            Color(.white)
+                .ignoresSafeArea(.all)
+            
             Image("login_bg")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
@@ -39,6 +42,7 @@ struct LoginView: View {
                         .underline(true, color: .g400)
                 }
             }
+            
         }
     }
 }

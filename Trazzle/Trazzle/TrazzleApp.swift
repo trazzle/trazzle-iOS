@@ -20,7 +20,7 @@ struct TrazzleApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView().onOpenURL(perform: { url in
+            HomeView(titleText: .constant(TrazzleConstants.launchTitleText)).onOpenURL(perform: { url in
                 if (AuthApi.isKakaoTalkLoginUrl(url)) {
                     //Kakao
                     AuthController.handleOpenUrl(url: url)

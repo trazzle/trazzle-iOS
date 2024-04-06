@@ -8,31 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        ZStack {
-            TabView {
-                Group {
-                    HomeView()
-                        .tabItem {
-                            Image("globe")
-                                .renderingMode(.template)
-                            Text("홈")
-                    }
-                    TravelRecordCollectionView()
-                        .tabItem {
-                            Image("book")
-                                .renderingMode(.template)
-                        Text("지도집")
-                    }
-                }
-                .toolbar(.visible, for: .tabBar)
-                .toolbarBackground(Color.white, for: .tabBar)
+        TabView {
+            NavigationStack {
+                HomeView(titleText: .constant(TrazzleConstants.launchTitleText))
             }
-            .tint(.mainGreen)
+            .tabItem {
+                Image("globe")
+                    .renderingMode(.template)
+                Text("홈")
+            }
+            NavigationStack {
+                TravelRecordCollectionView()
+            }
+            .tabItem {
+                Image("book")
+                    .renderingMode(.template)
+                Text("지도집")
+            }
+            
+//            .toolbar(.hidden, for: .navigationBar)
+            .navigationBarBackButtonHidden(true)
+//            .toolbarBackground(Color.white60, for: .navigationBar)
+            .toolbar(.visible, for: .tabBar)
+            .toolbarBackground(Color.white, for: .tabBar)
         }
+        .tint(.mainGreen)
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

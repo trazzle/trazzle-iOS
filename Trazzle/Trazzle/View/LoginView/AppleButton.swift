@@ -5,35 +5,47 @@
 //  Created by joomin on 3/27/24.
 //
 
+import AuthenticationServices
 import SwiftUI
 
 struct AppleButton: View {
+    let loginSender = LoginSender()
+    let authorize = Authorize()
+    let appleUrl = "https://trazzle.p-e.kr/api/users/sign-in/apple"
+    
     var body: some View {
-        Button {
+        Button(action: {
+            authorize.authButtonTapped()
             
-            //애플 로그인
-            
-        } label : {
-            Color(red: 0 / 255, green: 0 / 255, blue: 0 / 255)
-                    .cornerRadius(16) // 버튼을 rounded로 만듦
+        }) {
+            ZStack {
+                RoundedRectangle(cornerRadius: 16)
+                    .fill(Color(red: 0 / 255, green: 0 / 255, blue: 0 / 255))
                     .frame(width: UIScreen.main.bounds.width * 0.9, height: 52)
-                    .overlay(
-                        HStack {
-                            // 아이콘 이미지 추가
-                            Image("apple_icon")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 24, height: 24)
-                            
-                            // 텍스트 추가
-                            Text("Apple로 계속하기")
-                                .foregroundColor(.white)
+                
+                HStack {
+                    Image("apple_icon")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 24, height: 24)
+                    
+                    Text("Apple로 계속하기")
+                        .foregroundColor(.white)
+                }
+            }
+        }
+        .padding(8)
+        .onAppear {
+                    // Authorize 클래스에 completionHandler 설정
+                    authorize.completionHandler = { tokenString in
+                        // completionHandler를 통해 전달받은 데이터 처리
+                        if let token = tokenString {
+                            loginSender.sendData(url: appleUrl, accessToken: token, oauthProvider: "a")
+                        } else {
+                            print("애플 token nil")
                         }
-                    )
-        }.padding(8)
+                    }
+                }
     }
 }
 
-//#Preview {
-//    AppleButton()
-//}

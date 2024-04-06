@@ -12,7 +12,10 @@ import KakaoSDKAuth
 import KakaoSDKUser
 
 struct KakaoButton: View{
+    let kakaoUrl = "https://trazzle.p-e.kr/api/users/sign-in/kakao"
+    
     var body: some View{
+        let loginSender = LoginSender()
         Button {
             if (UserApi.isKakaoTalkLoginAvailable()) {
                 // 카카오톡이 설치되어있는 경우
@@ -22,7 +25,9 @@ struct KakaoButton: View{
                     }
                     if let oauthToken = oauthToken{
                         // 소셜 로그인(회원가입 API CALL)
-                        print(oauthToken)
+                        let token = oauthToken.accessToken
+                        print(token)
+                        loginSender.sendData(url: kakaoUrl, accessToken: token, oauthProvider: "k")
                     }
                 }
             } else {
@@ -33,7 +38,9 @@ struct KakaoButton: View{
                     }
                     if let oauthToken = oauthToken{
                         print("kakao success")
+                        let token = oauthToken.accessToken
                         // 소셜 로그인(회원가입 API CALL)
+                        loginSender.sendData(url: kakaoUrl, accessToken: token, oauthProvider: "k")
                     }
                 }
             }
@@ -56,4 +63,5 @@ struct KakaoButton: View{
                     )
         }.padding(4)
     }
+    
 }
