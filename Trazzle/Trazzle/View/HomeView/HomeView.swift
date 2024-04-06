@@ -10,11 +10,17 @@ import CodableGeoJSON
 
 struct HomeView: View {
     
+    // Title
     @Binding var titleText: String
+    @State var navTitle: String = TrazzleConstants.launchTitleText
+    
+    // fullscreen
+    @State var isFullSceenOver = false
+    
+    // chart view
     @State var isShowingCountryStatisticsView = false
     
     var homeVM = HomeViewModel.shared
-    @State var navTitle: String = "MY Travel"
     
     var body: some View {
         NavigationStack {
@@ -40,32 +46,38 @@ struct HomeView: View {
                         .frame(height: 52, alignment: .top)
                     Spacer()
                 }
+                
                 // 여행기록 추가버튼
-                NavigationLink(value: "Login") {
-                    ZStack(alignment: .bottomTrailing) {
-                        Image(systemName: "plus")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 24, height: 24)
-                            .padding(.all)
-                            .background(Color.mainGreen)
-                            .frame(width: 56, height: 56)
-                            .foregroundColor(.white)
-                            .clipShape(Circle())
-                            .shadow(radius: 4, x: 0 , y: 4)
-                    }
-                    .padding(.trailing, 16)
-                    .padding(.bottom, 40)
-                }
-                .navigationDestination(for: String.self) { view in
-                    if LoginManager.shared.isLoggedIn {
-                        CountryListView()
-                    } else {
-                        LoginView()
-                            .navigationBarBackButtonHidden(true)
-                            .toolbar(.hidden, for: .tabBar)
-                    }
-                }
+                Button(action: {
+                    isFullSceenOver.toggle()
+                }, label: {
+                    Image(systemName: "plus")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 24, height: 24)
+                        .padding(.all)
+                        .background(Color.mainGreen)
+                        .frame(width: 56, height: 56)
+                        .foregroundColor(.white)
+                        .clipShape(Circle())
+                        .shadow(radius: 4, x: 0 , y: 4)
+                })
+                .padding(.trailing, 16)
+                .padding(.bottom, 40)
+                .fullScreenCover(
+                    isPresented: $isFullSceenOver,
+                    onDismiss: {
+                        navTitle = "MY Travel"
+                    },
+                    content: {
+                        if LoginManager.shared.isLoggedIn {
+                            // 로그인 처리 후 메인화면 리로드
+                        } else {
+                            // FullScreenCover로 처리
+                            LoginView(isFullScreenOver: $isFullSceenOver)
+                        }
+                    })
+                
             }
             .background(Color.homeBgColor)
             
@@ -111,16 +123,16 @@ struct HomeView: View {
             //            }
         }
         // MARK: - 통계뷰
-//        .safeAreaInset(edge: .top) {
-//            VStack {
-//                Spacer().frame(height: 52 + (TrazzleApplication.getNotchHeight() ?? 0))
-//                CountryStatisticView()
-//                    .frame(height: 109)
-//                    .hide(if: !isShowingCountryStatisticsView)
-//                    .background(Color.white60)
-//            }
-//            
-//        }
+        //        .safeAreaInset(edge: .top) {
+        //            VStack {
+        //                Spacer().frame(height: 52 + (TrazzleApplication.getNotchHeight() ?? 0))
+        //                CountryStatisticView()
+        //                    .frame(height: 109)
+        //                    .hide(if: !isShowingCountryStatisticsView)
+        //                    .background(Color.white60)
+        //            }
+        //
+        //        }
     }
 }
 
