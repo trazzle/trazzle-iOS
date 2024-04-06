@@ -42,7 +42,7 @@ extension Color {
         return Color(hex: "FDFDFD")
     }
     
-    static var grayColor: Color {
+    static var shadowColor: Color {
         return Color(hex: "D9D9D9")
     }
     

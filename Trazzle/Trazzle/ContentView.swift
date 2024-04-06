@@ -9,6 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     
+    init() {
+        // MARK: TabBar
+        let tabBarAppearance = UITabBarAppearance()
+        tabBarAppearance.configureWithOpaqueBackground()
+        tabBarAppearance.backgroundColor = UIColor.white
+        UITabBar.appearance().backgroundColor = .white
+        UITabBar.appearance().barTintColor = .white
+    }
+    
     var body: some View {
         TabView {
             NavigationStack {
@@ -33,8 +42,7 @@ struct ContentView: View {
         .tint(.p500)
     }
 }
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+
+#Preview {
+    ContentView()
 }

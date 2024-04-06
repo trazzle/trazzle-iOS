@@ -12,35 +12,53 @@ struct RecordDetailView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
-        NavigationView {
-            VStack {
-                Spacer().frame(height: 52)
-                ScrollView(.vertical, showsIndicators: false) {
-                    VStack {
-                        // 사진 이미지 페이지
-                        VStack {
-                            RecordImageSlideView()
-                                .frame(height: getBgSize().height)
-                            Spacer().frame(height: 48)
-                        }
-                        .padding(.leading, 20)
-                        .background(Color.mapBgColor)
+        
+        NavigationStack {
+            ZStack(alignment: .top) {
+                Color.white.ignoresSafeArea()
+                ScrollView(.vertical) {
+                    VStack(spacing: 0) {
+                        // 유저 뷰
+                        RecordUserInfoView(name: "김철수", image: "book")
+                            .frame(height: 52)
+                        
+                        // 이미지 뷰
+                        RecordImageSlideView()
+                        
+                        Color.mapBgColor
+                            .frame(height: 52)
+                        
                         
                         // 여행기 제목 헤더
-                        RecordTitleView()
+                        RecordTitleHeaderView()
+                        
+                        Color.mapBgColor
+                            .frame(height: 8)
+                        
+                        // 여행 키워드 뷰
+                        RecordKeywordView()
+                        
+                        
+                        
                         // 텍스트 뷰 (일단은...)
-                        ZStack {
-                            Text("가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바")
-                                .frame(maxWidth: .infinity)
-                                .padding([.leading, .trailing], 16)
-                        }
-                        .background(.white)
+                        Text("가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바")
+                            .frame(maxWidth: .infinity)
+                            .padding([.leading, .trailing], 16)
+                            .padding(.bottom, 40)
+                            .background(.white)
+                            .foregroundStyle(Color.black)
                     }
                 }
-            }.background(VStack{ Color.mapBgColor ; Color.white })
+                .scrollIndicators(.hidden)
+            }
+            
         }
-        .navigationTitle("내 여행").foregroundColor(.g900)
+        // 네비게이션바 세팅
+        .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
+        .navigationTitle("내 여행").foregroundStyle(Color.g900)
+        .toolbar(.visible, for: .navigationBar)
+        .toolbarBackground(.white, for: .navigationBar)
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button(action: {
@@ -48,6 +66,8 @@ struct RecordDetailView: View {
                     self.presentationMode.wrappedValue.dismiss()
                 }, label: {
                     Image("backArrow")
+                        .resizable()
+                        .frame(width: 24, height: 24)
                 })
             }
             ToolbarItem(placement: .navigationBarTrailing) {
@@ -55,12 +75,10 @@ struct RecordDetailView: View {
                     print("edit button click")
                 }, label: {
                     Image("edit")
+                        .resizable()
+                        .frame(width: 24, height: 24)
                 })
             }
-        }
-        .safeAreaInset(edge: .top) {
-            TravelDetailAccessoryView(name: "김철수", image: "book")
-                .frame(height: 52)
         }
     }
 }
@@ -78,8 +96,6 @@ extension RecordDetailView {
     }
 }
 
-struct RecordDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        RecordDetailView()
-    }
+#Preview {
+    RecordDetailView()
 }

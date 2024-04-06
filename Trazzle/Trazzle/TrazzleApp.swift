@@ -13,11 +13,7 @@ import GoogleSignIn
 @main
 struct TrazzleApp: App {
     
-    init() {
-        // TabBar
-        UITabBar.appearance().backgroundColor = .white
-        UITabBar.appearance().barTintColor = .white
-        
+    init() {        
         // kakao SDK 초기화
         KakaoSDK.initSDK(appKey: "a9cf757f00972eaeff4befd171abe6b1")
     }
