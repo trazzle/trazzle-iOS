@@ -23,7 +23,7 @@ struct HomeView: View {
     var homeVM = HomeViewModel.shared
     
     var body: some View {
-        NavigationStack {
+//        NavigationStack {
             ZStack(alignment: .bottomTrailing) {
                 // 세계지도
                 ScrollView([.horizontal],
@@ -51,12 +51,12 @@ struct HomeView: View {
                 Button(action: {
                     isFullSceenOver.toggle()
                 }, label: {
-                    Image(systemName: "plus")
+                    Image("add_icon")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 24, height: 24)
                         .padding(.all)
-                        .background(Color.mainGreen)
+                        .background(Color.p500)
                         .frame(width: 56, height: 56)
                         .foregroundColor(.white)
                         .clipShape(Circle())
@@ -67,7 +67,7 @@ struct HomeView: View {
                 .fullScreenCover(
                     isPresented: $isFullSceenOver,
                     onDismiss: {
-                        navTitle = "MY Travel"
+//                        navTitle = "MY Travel"
                     },
                     content: {
                         if LoginManager.shared.isLoggedIn {
@@ -121,7 +121,7 @@ struct HomeView: View {
             //                    }
             //                }
             //            }
-        }
+//        }
         // MARK: - 통계뷰
         //        .safeAreaInset(edge: .top) {
         //            VStack {

@@ -28,7 +28,7 @@ struct HomeNavView: View {
                         Button(action: {
                             print("export button action")
                         },label: {
-                            Image("export")
+                            Image("share")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 24, height: 24)
@@ -39,7 +39,7 @@ struct HomeNavView: View {
                             print("isShowingCS: \(isShowingCountryStatisticsView)")
                             
                         },label: {
-                            Image("statistics")
+                            Image("chart")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 24, height: 24)
@@ -48,9 +48,9 @@ struct HomeNavView: View {
                     .frame(width: 48, height: 48)
                     Spacer().frame(width: 4)
                 }
-                CountryStatisticView(isRecordView: false)
-                    .frame(height: 109)
-                    .hide(if: !isShowingCountryStatisticsView)
+//                CountryStatisticView(isRecordView: false)
+//                    .frame(height: 109)
+//                    .hide(if: !isShowingCountryStatisticsView)
             }
         }
     }

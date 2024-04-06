@@ -19,6 +19,7 @@ struct ContentView: View {
                     .renderingMode(.template)
                 Text("홈")
             }
+            
             NavigationStack {
                 TravelRecordCollectionView()
             }
@@ -27,14 +28,9 @@ struct ContentView: View {
                     .renderingMode(.template)
                 Text("지도집")
             }
-            
-//            .toolbar(.hidden, for: .navigationBar)
-            .navigationBarBackButtonHidden(true)
-//            .toolbarBackground(Color.white60, for: .navigationBar)
             .toolbar(.visible, for: .tabBar)
-            .toolbarBackground(Color.white, for: .tabBar)
         }
-        .tint(.mainGreen)
+        .tint(.p500)
     }
 }
 struct ContentView_Previews: PreviewProvider {
