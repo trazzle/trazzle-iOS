@@ -33,7 +33,7 @@ struct RecordImageSlideView: View {
                     .overlay(
                         RoundedRectangle(cornerRadius: 4)
                             .stroke(Color.g50, lineWidth: 1)
-                            .shadow(color: .grayShadow,
+                            .shadow(color: .g50,
                                     radius: 4,
                                     x: 1, y: 1)
                         

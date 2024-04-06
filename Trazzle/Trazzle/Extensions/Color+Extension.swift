@@ -42,10 +42,6 @@ extension Color {
         return Color(hex: "FDFDFD")
     }
     
-    static var grayShadow: Color {
-        return Color("F2F4F5")
-    }
-    
     static var grayColor: Color {
         return Color(hex: "D9D9D9")
     }
