@@ -47,6 +47,7 @@
 		6CC523F72BB4487200B7C3D0 /* AppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC523F62BB4487200B7C3D0 /* AppleButton.swift */; };
 		9915C6092BC69EAF00C94273 /* launch_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9915C6072BC69EAF00C94273 /* launch_icon.png */; };
 		9915C60C2BC69EC800C94273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9915C60A2BC69EC800C94273 /* LaunchScreen.storyboard */; };
+		9915C6102BC6AF1200C94273 /* SnapCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9915C60F2BC6AF1200C94273 /* SnapCarouselView.swift */; };
 		995D74992BB86BC70093DD20 /* TrazzleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D74982BB86BC70093DD20 /* TrazzleConstants.swift */; };
 		995D749B2BB877910093DD20 /* TrazzleApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D749A2BB877910093DD20 /* TrazzleApplication.swift */; };
 		9969ED782BB7DE1A008C1B07 /* RecordUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9969ED772BB7DE1A008C1B07 /* RecordUserInfoView.swift */; };
@@ -97,6 +98,7 @@
 		6CC523F62BB4487200B7C3D0 /* AppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleButton.swift; sourceTree = "<group>"; };
 		9915C6072BC69EAF00C94273 /* launch_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_icon.png; sourceTree = "<group>"; };
 		9915C60A2BC69EC800C94273 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9915C60F2BC6AF1200C94273 /* SnapCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarouselView.swift; sourceTree = "<group>"; };
 		995D74982BB86BC70093DD20 /* TrazzleConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrazzleConstants.swift; sourceTree = "<group>"; };
 		995D749A2BB877910093DD20 /* TrazzleApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrazzleApplication.swift; sourceTree = "<group>"; };
 		9969ED752BB7DB4A008C1B07 /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
@@ -343,6 +345,7 @@
 				136E2E342BB7B88F00359B48 /* RecordDetailView.swift */,
 				9969ED772BB7DE1A008C1B07 /* RecordUserInfoView.swift */,
 				136E2E3D2BB7C79800359B48 /* RecordImageSlideView.swift */,
+				9915C60F2BC6AF1200C94273 /* SnapCarouselView.swift */,
 				9969ED7F2BB821AA008C1B07 /* CarouselView.swift */,
 				9969ED792BB7DFDF008C1B07 /* RecordTitleHeaderView.swift */,
 				99AF4E782BC1B8D800C77BB7 /* RecordKeywordView.swift */,
@@ -445,6 +448,7 @@
 				9969ED7A2BB7DFDF008C1B07 /* RecordTitleHeaderView.swift in Sources */,
 				136E2E352BB7B88F00359B48 /* RecordDetailView.swift in Sources */,
 				136E2E382BB7BD0B00359B48 /* SettingView.swift in Sources */,
+				9915C6102BC6AF1200C94273 /* SnapCarouselView.swift in Sources */,
 				997F29BF2BC18AE900F0244A /* String+Extension.swift in Sources */,
 				135AA99A2BB0872800965EAA /* HomeView.swift in Sources */,
 				9969ED7E2BB7F23A008C1B07 /* WrappedHStack.swift in Sources */,

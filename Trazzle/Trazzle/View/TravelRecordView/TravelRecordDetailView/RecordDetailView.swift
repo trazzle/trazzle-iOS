@@ -9,6 +9,9 @@ import SwiftUI
 
 struct RecordDetailView: View {
     
+//    @State var images = ["google_icon", "globe", "book", "apple_icon", "kakao_icon", "share"]
+//    @State var currentIndex: Int = 0
+    
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
@@ -23,11 +26,12 @@ struct RecordDetailView: View {
                             .frame(height: 52)
                         
                         // 이미지 뷰
+//                        InfiniteCarouselView(images: $images, currentIndex: $currentIndex)
                         RecordImageSlideView()
+                            .frame(height: 424)
                         
                         Color.mapBgColor
                             .frame(height: 52)
-                        
                         
                         // 여행기 제목 헤더
                         RecordTitleHeaderView()
