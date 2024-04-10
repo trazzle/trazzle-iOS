@@ -24,7 +24,7 @@ struct HomeView: View {
     
     var body: some View {
 //        NavigationStack {
-            ZStack(alignment: .bottomTrailing) {
+            ZStack {
                 // 세계지도
                 ScrollView([.horizontal],
                            showsIndicators: false) {
@@ -41,42 +41,40 @@ struct HomeView: View {
                     // from a quick google, 1.65 is apparently best for a mercator map
                     .aspectRatio(1.65, contentMode: .fill)
                 }.ignoresSafeArea()
+                
                 VStack {
                     HomeNavView(titleText: $navTitle)
                         .frame(height: 52, alignment: .top)
                     Spacer()
-                }
-                
-                // 여행기록 추가버튼
-                Button(action: {
-                    isFullSceenOver.toggle()
-                }, label: {
-                    Image("add_icon")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 24, height: 24)
-                        .padding(.all)
-                        .background(Color.p500)
-                        .frame(width: 56, height: 56)
-                        .foregroundColor(.white)
-                        .clipShape(Circle())
-                        .shadow(radius: 4, x: 0 , y: 4)
-                })
-                .padding(.trailing, 16)
-                .padding(.bottom, 40)
-                .fullScreenCover(
-                    isPresented: $isFullSceenOver,
-                    onDismiss: {
-//                        navTitle = "MY Travel"
-                    },
-                    content: {
-                        if LoginManager.shared.isLoggedIn {
-                            // 로그인 처리 후 메인화면 리로드
-                        } else {
-                            // FullScreenCover로 처리
-                            LoginView(isFullScreenOver: $isFullSceenOver)
-                        }
+                    // 여행기록 추가버튼
+                    Button(action: {
+                        isFullSceenOver.toggle()
+                    }, label: {
+                        Image("add_icon")
+                            .resizable()
+                            .frame(width: 24, height: 24)
+                            .padding([.all], 16)
+                            .background(Color.p500)
+                            .clipShape(Circle())
+                            .shadow(radius: 4, x: 0 , y: 4)
                     })
+                    .padding(.trailing, 16)
+                    .padding(.bottom, 40)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+                    .fullScreenCover(
+                        isPresented: $isFullSceenOver,
+                        onDismiss: {
+    //                        navTitle = "MY Travel"
+                        },
+                        content: {
+                            if LoginManager.shared.isLoggedIn {
+                                // 로그인 처리 후 메인화면 리로드
+                            } else {
+                                // FullScreenCover로 처리
+                                LoginView(isFullScreenOver: $isFullSceenOver)
+                            }
+                        })
+                }
                 
             }
             .background(Color.homeBgColor)
