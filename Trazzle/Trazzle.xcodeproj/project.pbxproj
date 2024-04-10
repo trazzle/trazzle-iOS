@@ -45,6 +45,8 @@
 		6CC20B282BB4637C003C3ABE /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC20B272BB4637C003C3ABE /* CountryListView.swift */; };
 		6CC20B2A2BB46497003C3ABE /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC20B292BB46497003C3ABE /* Country.swift */; };
 		6CC523F72BB4487200B7C3D0 /* AppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC523F62BB4487200B7C3D0 /* AppleButton.swift */; };
+		9915C6092BC69EAF00C94273 /* launch_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9915C6072BC69EAF00C94273 /* launch_icon.png */; };
+		9915C60C2BC69EC800C94273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9915C60A2BC69EC800C94273 /* LaunchScreen.storyboard */; };
 		995D74992BB86BC70093DD20 /* TrazzleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D74982BB86BC70093DD20 /* TrazzleConstants.swift */; };
 		995D749B2BB877910093DD20 /* TrazzleApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D749A2BB877910093DD20 /* TrazzleApplication.swift */; };
 		9969ED782BB7DE1A008C1B07 /* RecordUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9969ED772BB7DE1A008C1B07 /* RecordUserInfoView.swift */; };
@@ -93,6 +95,8 @@
 		6CC20B272BB4637C003C3ABE /* CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListView.swift; sourceTree = "<group>"; };
 		6CC20B292BB46497003C3ABE /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		6CC523F62BB4487200B7C3D0 /* AppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleButton.swift; sourceTree = "<group>"; };
+		9915C6072BC69EAF00C94273 /* launch_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_icon.png; sourceTree = "<group>"; };
+		9915C60A2BC69EC800C94273 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		995D74982BB86BC70093DD20 /* TrazzleConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrazzleConstants.swift; sourceTree = "<group>"; };
 		995D749A2BB877910093DD20 /* TrazzleApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrazzleApplication.swift; sourceTree = "<group>"; };
 		9969ED752BB7DB4A008C1B07 /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
@@ -169,6 +173,7 @@
 		135AA99F2BB089BD00965EAA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9915C60B2BC69EC800C94273 /* LaunchScreen */,
 				6C158B4A2BB6880F004B32CD /* CityListView */,
 				6CC20B262BB46367003C3ABE /* CountryListView */,
 				6C2A5E402BB2B82B00E224BC /* LoginView */,
@@ -227,6 +232,7 @@
 		135AA9AF2BB1E13F00965EAA /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				9915C6082BC69EAF00C94273 /* Images */,
 				135AA9B02BB1E15600965EAA /* world.json */,
 				135AA98F2BB071ED00965EAA /* Assets.xcassets */,
 			);
@@ -295,6 +301,22 @@
 				6C158B532BB6DD2C004B32CD /* CategoryView.swift */,
 			);
 			path = CountryListView;
+			sourceTree = "<group>";
+		};
+		9915C6082BC69EAF00C94273 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9915C6072BC69EAF00C94273 /* launch_icon.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		9915C60B2BC69EC800C94273 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9915C60A2BC69EC800C94273 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 		995D74972BB86BB60093DD20 /* Constants */ = {
@@ -400,7 +422,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				135AA9B12BB1E15600965EAA /* world.json in Resources */,
+				9915C6092BC69EAF00C94273 /* launch_icon.png in Resources */,
 				135AA9932BB071ED00965EAA /* Preview Assets.xcassets in Resources */,
+				9915C60C2BC69EC800C94273 /* LaunchScreen.storyboard in Resources */,
 				135AA9902BB071ED00965EAA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
