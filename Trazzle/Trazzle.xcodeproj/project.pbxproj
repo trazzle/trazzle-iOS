@@ -45,6 +45,7 @@
 		6CC20B282BB4637C003C3ABE /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC20B272BB4637C003C3ABE /* CountryListView.swift */; };
 		6CC20B2A2BB46497003C3ABE /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC20B292BB46497003C3ABE /* Country.swift */; };
 		6CC523F72BB4487200B7C3D0 /* AppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC523F62BB4487200B7C3D0 /* AppleButton.swift */; };
+		993092B62BC69B6100B5010E /* launch_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 993092B52BC69B6100B5010E /* launch_icon.png */; };
 		993118F22BB9110F00AA7C71 /* TravelRecordCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993118F12BB9110F00AA7C71 /* TravelRecordCollectionView.swift */; };
 		9969ED782BB7DE1A008C1B07 /* TravelDetailAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9969ED772BB7DE1A008C1B07 /* TravelDetailAccessoryView.swift */; };
 		9969ED7A2BB7DFDF008C1B07 /* RecordTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9969ED792BB7DFDF008C1B07 /* RecordTitleView.swift */; };
@@ -90,6 +91,7 @@
 		6CC20B272BB4637C003C3ABE /* CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListView.swift; sourceTree = "<group>"; };
 		6CC20B292BB46497003C3ABE /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		6CC523F62BB4487200B7C3D0 /* AppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleButton.swift; sourceTree = "<group>"; };
+		993092B52BC69B6100B5010E /* launch_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_icon.png; sourceTree = "<group>"; };
 		993118F12BB9110F00AA7C71 /* TravelRecordCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelRecordCollectionView.swift; sourceTree = "<group>"; };
 		9969ED772BB7DE1A008C1B07 /* TravelDetailAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDetailAccessoryView.swift; sourceTree = "<group>"; };
 		9969ED792BB7DFDF008C1B07 /* RecordTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTitleView.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 		135AA9AF2BB1E13F00965EAA /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				993092B42BC69B5300B5010E /* Images */,
 				135AA9B02BB1E15600965EAA /* world.json */,
 				135AA98F2BB071ED00965EAA /* Assets.xcassets */,
 			);
@@ -300,6 +303,14 @@
 			path = CountryListView;
 			sourceTree = "<group>";
 		};
+		993092B42BC69B5300B5010E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				993092B52BC69B6100B5010E /* launch_icon.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		99E3F3782BC14A3A0077F0D8 /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +390,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				993092B62BC69B6100B5010E /* launch_icon.png in Resources */,
 				135AA9B12BB1E15600965EAA /* world.json in Resources */,
 				99E3F37A2BC14A4B0077F0D8 /* LaunchScreen.storyboard in Resources */,
 				135AA9932BB071ED00965EAA /* Preview Assets.xcassets in Resources */,

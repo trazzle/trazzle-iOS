@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="IuY-pH-8QB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="IuY-pH-8QB">
                                 <rect key="frame" x="153.66666666666666" y="395.66666666666669" width="85.666666666666657" height="85.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="IuY-pH-8QB" secondAttribute="height" multiplier="1:1" id="jOf-j5-6Wl"/>
@@ -38,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launchIcon" width="80" height="80"/>
+        <image name="launch_icon.png" width="300" height="300"/>
     </resources>
 </document>
