@@ -45,14 +45,18 @@
 		6CC20B282BB4637C003C3ABE /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC20B272BB4637C003C3ABE /* CountryListView.swift */; };
 		6CC20B2A2BB46497003C3ABE /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC20B292BB46497003C3ABE /* Country.swift */; };
 		6CC523F72BB4487200B7C3D0 /* AppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC523F62BB4487200B7C3D0 /* AppleButton.swift */; };
-		993092B62BC69B6100B5010E /* launch_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 993092B52BC69B6100B5010E /* launch_icon.png */; };
-		993118F22BB9110F00AA7C71 /* TravelRecordCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993118F12BB9110F00AA7C71 /* TravelRecordCollectionView.swift */; };
-		9969ED782BB7DE1A008C1B07 /* TravelDetailAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9969ED772BB7DE1A008C1B07 /* TravelDetailAccessoryView.swift */; };
-		9969ED7A2BB7DFDF008C1B07 /* RecordTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9969ED792BB7DFDF008C1B07 /* RecordTitleView.swift */; };
+		9915C6092BC69EAF00C94273 /* launch_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9915C6072BC69EAF00C94273 /* launch_icon.png */; };
+		9915C60C2BC69EC800C94273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9915C60A2BC69EC800C94273 /* LaunchScreen.storyboard */; };
+		9915C6102BC6AF1200C94273 /* SnapCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9915C60F2BC6AF1200C94273 /* SnapCarouselView.swift */; };
+		995D74992BB86BC70093DD20 /* TrazzleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D74982BB86BC70093DD20 /* TrazzleConstants.swift */; };
+		995D749B2BB877910093DD20 /* TrazzleApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D749A2BB877910093DD20 /* TrazzleApplication.swift */; };
+		9969ED782BB7DE1A008C1B07 /* RecordUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9969ED772BB7DE1A008C1B07 /* RecordUserInfoView.swift */; };
+		9969ED7A2BB7DFDF008C1B07 /* RecordTitleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9969ED792BB7DFDF008C1B07 /* RecordTitleHeaderView.swift */; };
 		9969ED7E2BB7F23A008C1B07 /* WrappedHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9969ED7D2BB7F23A008C1B07 /* WrappedHStack.swift */; };
 		9969ED802BB821AA008C1B07 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9969ED7F2BB821AA008C1B07 /* CarouselView.swift */; };
-		99AC4DAB2BB90E45005C256C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AC4DAA2BB90E45005C256C /* String+Extension.swift */; };
-		99E3F37A2BC14A4B0077F0D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E3F3792BC14A4B0077F0D8 /* LaunchScreen.storyboard */; };
+		997F29BF2BC18AE900F0244A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997F29BE2BC18AE900F0244A /* String+Extension.swift */; };
+		997F29C12BC18B3400F0244A /* TravelRecordCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997F29C02BC18B3400F0244A /* TravelRecordCollectionView.swift */; };
+		99AF4E792BC1B8D800C77BB7 /* RecordKeywordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF4E782BC1B8D800C77BB7 /* RecordKeywordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +67,7 @@
 		135AA98F2BB071ED00965EAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		135AA9922BB071ED00965EAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		135AA9992BB0872800965EAA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		135AA9A12BB1CB8C00965EAA /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		135AA9A72BB1DBEC00965EAA /* GeoJSONMapDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoJSONMapDrawer.swift; sourceTree = "<group>"; };
 		135AA9AA2BB1DCAD00965EAA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		135AA9B02BB1E15600965EAA /* world.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = world.json; sourceTree = "<group>"; };
@@ -91,14 +96,20 @@
 		6CC20B272BB4637C003C3ABE /* CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListView.swift; sourceTree = "<group>"; };
 		6CC20B292BB46497003C3ABE /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		6CC523F62BB4487200B7C3D0 /* AppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleButton.swift; sourceTree = "<group>"; };
-		993092B52BC69B6100B5010E /* launch_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_icon.png; sourceTree = "<group>"; };
-		993118F12BB9110F00AA7C71 /* TravelRecordCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelRecordCollectionView.swift; sourceTree = "<group>"; };
-		9969ED772BB7DE1A008C1B07 /* TravelDetailAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDetailAccessoryView.swift; sourceTree = "<group>"; };
-		9969ED792BB7DFDF008C1B07 /* RecordTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTitleView.swift; sourceTree = "<group>"; };
+		9915C6072BC69EAF00C94273 /* launch_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_icon.png; sourceTree = "<group>"; };
+		9915C60A2BC69EC800C94273 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9915C60F2BC6AF1200C94273 /* SnapCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarouselView.swift; sourceTree = "<group>"; };
+		995D74982BB86BC70093DD20 /* TrazzleConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrazzleConstants.swift; sourceTree = "<group>"; };
+		995D749A2BB877910093DD20 /* TrazzleApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrazzleApplication.swift; sourceTree = "<group>"; };
+		9969ED752BB7DB4A008C1B07 /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		9969ED772BB7DE1A008C1B07 /* RecordUserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordUserInfoView.swift; sourceTree = "<group>"; };
+		9969ED792BB7DFDF008C1B07 /* RecordTitleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTitleHeaderView.swift; sourceTree = "<group>"; };
+		9969ED7B2BB7F0B8008C1B07 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		9969ED7D2BB7F23A008C1B07 /* WrappedHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedHStack.swift; sourceTree = "<group>"; };
 		9969ED7F2BB821AA008C1B07 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
-		99AC4DAA2BB90E45005C256C /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
-		99E3F3792BC14A4B0077F0D8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		997F29BE2BC18AE900F0244A /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		997F29C02BC18B3400F0244A /* TravelRecordCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelRecordCollectionView.swift; sourceTree = "<group>"; };
+		99AF4E782BC1B8D800C77BB7 /* RecordKeywordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordKeywordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +134,7 @@
 			children = (
 				135AA98A2BB071EB00965EAA /* Trazzle */,
 				135AA9892BB071EB00965EAA /* Products */,
+				997F29BD2BC18A8700F0244A /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +151,7 @@
 			children = (
 				6C8435012BB717AC00617BE0 /* Trazzle.entitlements */,
 				6C90AD9C2BB304EF00C4C411 /* Info.plist */,
+				995D74972BB86BB60093DD20 /* Constants */,
 				6C902D592BB6850F002829AA /* Extensions */,
 				135AA9A92BB1DCA000965EAA /* ViewModel */,
 				135AA9A62BB1DBDE00965EAA /* Model */,
@@ -162,7 +175,7 @@
 		135AA99F2BB089BD00965EAA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				99E3F3782BC14A3A0077F0D8 /* LaunchScreen */,
+				9915C60B2BC69EC800C94273 /* LaunchScreen */,
 				6C158B4A2BB6880F004B32CD /* CityListView */,
 				6CC20B262BB46367003C3ABE /* CountryListView */,
 				6C2A5E402BB2B82B00E224BC /* LoginView */,
@@ -185,6 +198,7 @@
 				6CB6F1232BB807E1006D212E /* Authorize.swift */,
 				6CB6F1252BB8181F006D212E /* User.swift */,
 				6CB6F1292BB83F4A006D212E /* LoginManager.swift */,
+				995D749A2BB877910093DD20 /* TrazzleApplication.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,7 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				136E2E3B2BB7C76500359B48 /* TravelRecordCollectionView */,
-				136E2E3C2BB7C76F00359B48 /* TravelRecordDetailView */,
+				997F29C22BC18BA500F0244A /* TravelRecordDetailView */,
 			);
 			path = TravelRecordView;
 			sourceTree = "<group>";
@@ -220,7 +234,7 @@
 		135AA9AF2BB1E13F00965EAA /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				993092B42BC69B5300B5010E /* Images */,
+				9915C6082BC69EAF00C94273 /* Images */,
 				135AA9B02BB1E15600965EAA /* world.json */,
 				135AA98F2BB071ED00965EAA /* Assets.xcassets */,
 			);
@@ -238,23 +252,11 @@
 		136E2E3B2BB7C76500359B48 /* TravelRecordCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				993118F12BB9110F00AA7C71 /* TravelRecordCollectionView.swift */,
+				997F29C02BC18B3400F0244A /* TravelRecordCollectionView.swift */,
 				134A7B662BB700EA0006522F /* ProfileHeaderView.swift */,
 				136619922BB71EE200C5C76F /* TravelRecordCell.swift */,
 			);
 			name = TravelRecordCollectionView;
-			sourceTree = "<group>";
-		};
-		136E2E3C2BB7C76F00359B48 /* TravelRecordDetailView */ = {
-			isa = PBXGroup;
-			children = (
-				136E2E342BB7B88F00359B48 /* RecordDetailView.swift */,
-				9969ED772BB7DE1A008C1B07 /* TravelDetailAccessoryView.swift */,
-				136E2E3D2BB7C79800359B48 /* RecordImageSlideView.swift */,
-				9969ED792BB7DFDF008C1B07 /* RecordTitleView.swift */,
-				9969ED7F2BB821AA008C1B07 /* CarouselView.swift */,
-			);
-			name = TravelRecordDetailView;
 			sourceTree = "<group>";
 		};
 		13DF06FA2BB5D68300DA4EE8 /* CountryStatisticView */ = {
@@ -287,7 +289,7 @@
 		6C902D592BB6850F002829AA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				99AC4DAA2BB90E45005C256C /* String+Extension.swift */,
+				997F29BE2BC18AE900F0244A /* String+Extension.swift */,
 				6C902D572BB6850F002829AA /* Color+Extension.swift */,
 				6C902D582BB6850F002829AA /* View+Extension.swift */,
 			);
@@ -303,20 +305,52 @@
 			path = CountryListView;
 			sourceTree = "<group>";
 		};
-		993092B42BC69B5300B5010E /* Images */ = {
+		9915C6082BC69EAF00C94273 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				993092B52BC69B6100B5010E /* launch_icon.png */,
+				9915C6072BC69EAF00C94273 /* launch_icon.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
 		};
-		99E3F3782BC14A3A0077F0D8 /* LaunchScreen */ = {
+		9915C60B2BC69EC800C94273 /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
-				99E3F3792BC14A4B0077F0D8 /* LaunchScreen.storyboard */,
+				9915C60A2BC69EC800C94273 /* LaunchScreen.storyboard */,
 			);
 			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		995D74972BB86BB60093DD20 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				995D74982BB86BC70093DD20 /* TrazzleConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		997F29BD2BC18A8700F0244A /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				9969ED752BB7DB4A008C1B07 /* View+Extension.swift */,
+				135AA9A12BB1CB8C00965EAA /* Color+Extension.swift */,
+				9969ED7B2BB7F0B8008C1B07 /* String+Extension.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		997F29C22BC18BA500F0244A /* TravelRecordDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				136E2E342BB7B88F00359B48 /* RecordDetailView.swift */,
+				9969ED772BB7DE1A008C1B07 /* RecordUserInfoView.swift */,
+				136E2E3D2BB7C79800359B48 /* RecordImageSlideView.swift */,
+				9915C60F2BC6AF1200C94273 /* SnapCarouselView.swift */,
+				9969ED7F2BB821AA008C1B07 /* CarouselView.swift */,
+				9969ED792BB7DFDF008C1B07 /* RecordTitleHeaderView.swift */,
+				99AF4E782BC1B8D800C77BB7 /* RecordKeywordView.swift */,
+			);
+			path = TravelRecordDetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,10 +424,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				993092B62BC69B6100B5010E /* launch_icon.png in Resources */,
 				135AA9B12BB1E15600965EAA /* world.json in Resources */,
-				99E3F37A2BC14A4B0077F0D8 /* LaunchScreen.storyboard in Resources */,
+				9915C6092BC69EAF00C94273 /* launch_icon.png in Resources */,
 				135AA9932BB071ED00965EAA /* Preview Assets.xcassets in Resources */,
+				9915C60C2BC69EC800C94273 /* LaunchScreen.storyboard in Resources */,
 				135AA9902BB071ED00965EAA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,11 +441,15 @@
 			files = (
 				6CC20B2A2BB46497003C3ABE /* Country.swift in Sources */,
 				6C90AD962BB2FF2700C4C411 /* GoogleButton.swift in Sources */,
+				995D74992BB86BC70093DD20 /* TrazzleConstants.swift in Sources */,
+				99AF4E792BC1B8D800C77BB7 /* RecordKeywordView.swift in Sources */,
 				135AA9A82BB1DBEC00965EAA /* GeoJSONMapDrawer.swift in Sources */,
-				9969ED782BB7DE1A008C1B07 /* TravelDetailAccessoryView.swift in Sources */,
-				9969ED7A2BB7DFDF008C1B07 /* RecordTitleView.swift in Sources */,
+				9969ED782BB7DE1A008C1B07 /* RecordUserInfoView.swift in Sources */,
+				9969ED7A2BB7DFDF008C1B07 /* RecordTitleHeaderView.swift in Sources */,
 				136E2E352BB7B88F00359B48 /* RecordDetailView.swift in Sources */,
 				136E2E382BB7BD0B00359B48 /* SettingView.swift in Sources */,
+				9915C6102BC6AF1200C94273 /* SnapCarouselView.swift in Sources */,
+				997F29BF2BC18AE900F0244A /* String+Extension.swift in Sources */,
 				135AA99A2BB0872800965EAA /* HomeView.swift in Sources */,
 				9969ED7E2BB7F23A008C1B07 /* WrappedHStack.swift in Sources */,
 				136E2E3E2BB7C79800359B48 /* RecordImageSlideView.swift in Sources */,
@@ -421,9 +459,9 @@
 				6CC20B282BB4637C003C3ABE /* CountryListView.swift in Sources */,
 				13DF06FC2BB5D69800DA4EE8 /* CountryStatisticView.swift in Sources */,
 				135AA9AB2BB1DCAD00965EAA /* HomeViewModel.swift in Sources */,
-				993118F22BB9110F00AA7C71 /* TravelRecordCollectionView.swift in Sources */,
 				135AA98E2BB071EB00965EAA /* ContentView.swift in Sources */,
 				134A7B672BB700EA0006522F /* ProfileHeaderView.swift in Sources */,
+				997F29C12BC18B3400F0244A /* TravelRecordCollectionView.swift in Sources */,
 				6CC523F72BB4487200B7C3D0 /* AppleButton.swift in Sources */,
 				6C2A5E492BB2B98000E224BC /* KakaoButton.swift in Sources */,
 				13DF06F82BB5D63400DA4EE8 /* HomeNavView.swift in Sources */,
@@ -442,8 +480,8 @@
 				6CB6F1262BB8181F006D212E /* User.swift in Sources */,
 				6C902D5B2BB68510002829AA /* View+Extension.swift in Sources */,
 				135AA98C2BB071EB00965EAA /* TrazzleApp.swift in Sources */,
+				995D749B2BB877910093DD20 /* TrazzleApplication.swift in Sources */,
 				6C158B582BB7018A004B32CD /* City.swift in Sources */,
-				99AC4DAB2BB90E45005C256C /* String+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,7 +619,6 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -597,6 +634,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -620,7 +658,6 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -636,6 +673,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

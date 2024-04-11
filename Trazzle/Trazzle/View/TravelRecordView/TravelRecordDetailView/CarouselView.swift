@@ -18,8 +18,7 @@ struct Carousel<Content: View>: View {
     @GestureState var dragOffset: CGFloat = 0
     @State var currentIndex: Int = 0
     
-    init(
-        pageCount: Int,
+    init(pageCount: Int,
         visibleEdgeSpace: CGFloat,
         spacing: CGFloat,
         @ViewBuilder content: @escaping (PageIndex) -> Content

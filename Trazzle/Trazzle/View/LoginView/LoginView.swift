@@ -10,16 +10,34 @@ import GoogleSignInSwift
 import GoogleSignIn
 
 struct LoginView: View {
+    
+    @Binding var isFullScreenOver: Bool
+    
     var body: some View {
         ZStack(alignment: .top) {
             
             Color(.white)
                 .ignoresSafeArea(.all)
             
+            HStack {
+                Spacer()
+                Button(action: {
+                    isFullScreenOver.toggle()
+                }, label: {
+                    Image("close_icon")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 24, height: 24)
+                })
+                .frame(width: 48, height: 48)
+                .padding(.trailing, 4)
+            }.background(Color.white)
+            
             Image("login_bg")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .edgesIgnoringSafeArea(.all)
+//                .edgesIgnoringSafeArea(.all)
+                .padding(.top, 48)
             
             VStack {
                 Spacer()
@@ -50,7 +68,7 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(isFullScreenOver: .constant(false))
     }
 }
 

@@ -10,29 +10,27 @@ import SwiftUI
 struct TravelRecordCollectionView: View {
     
     // test
-    let data = Array(1...1000).map { "\($0)"}
+    let data = Array(1...10).map { "\($0)"}
     let columns = [GridItem(.adaptive(minimum: 160))]
     
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
-                Color.mapBgColor.ignoresSafeArea()
-                VStack {
-                    ZStack {
-                        ProfileHeaderView()
-                    }.background(.white)
+                Color.mapBgColor.ignoresSafeArea(edges: .bottom)
+                VStack(spacing: 8) {
+                    ProfileHeaderView()
+                        .frame(height: 160)
+                        .background(.white)
                     
-                    Spacer()
-                    
-                    // grid
+                    // 마그넷뷰
                     ScrollView(showsIndicators: false) {
                         LazyVGrid(columns: columns, spacing: 7)  {
                             ForEach(data, id: \.self) { i in
                                 VStack {
                                     NavigationLink(
                                         destination: RecordDetailView()) {
-                                        TravelRecordCell()}
+                                            TravelRecordCell()}
                                 }
                                 .background(.white)
                             }
@@ -41,22 +39,24 @@ struct TravelRecordCollectionView: View {
                     }
                     .padding([.leading, .trailing], 16)
                 }
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem {
-                        NavigationLink(
-                            destination: {
-                                SettingView() },
-                            label: {
-                                Label("Settings", systemImage: "gearshape")
-                                    .foregroundColor(.black)
-                                    .padding(.trailing, 4)
-                            })
-                    }
-                }
-                .tint(.black)
+                
             }
         }
+        .toolbar {
+            ToolbarItem {
+                NavigationLink(
+                    destination: {
+                        SettingView() },
+                    label: {
+                        Image("setting_icon")
+                        .resizable()
+                        .frame(width: 24, height: 24)
+                        .foregroundColor(.g900)
+                        .padding(.trailing, 4)
+                    })
+            }
+        }
+        .tint(.black)
     }
 }
 struct MapCollectionView_Previews: PreviewProvider {

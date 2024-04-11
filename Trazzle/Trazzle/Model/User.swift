@@ -12,6 +12,6 @@ struct User: Codable {
     let id: Int
     let account: String
     let name: String
-    let profileImageURL: String
-    let intro: String
+    let profileImageURL: String?
+    let intro: String?
 }
