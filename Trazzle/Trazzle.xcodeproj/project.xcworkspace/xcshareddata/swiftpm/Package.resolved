@@ -1,5 +1,5 @@
 {
-  "originHash" : "173f05da04fdd0bd7d736f536d478501d766a56c29a1bc827b61dc35a91f3407",
+  "originHash" : "d0ee0408e2080723ab7ee504d7664d433b9a1aab4ded81c4e2393a4824fa8d38",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/openid/AppAuth-iOS.git",
       "state" : {
-        "revision" : "7e2c09cbeb3bb799f26c268dbedb26325ea722a9",
-        "version" : "1.7.3"
+        "revision" : "8c0b028aedf617d6d780d448dc836f7048166d0f",
+        "version" : "1.7.4"
       }
     },
     {
@@ -71,6 +71,33 @@
       "state" : {
         "branch" : "master",
         "revision" : "b7a78bac4cb015fc3b1de34255b96421091fcf42"
+      }
+    },
+    {
+      "identity" : "moya",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Moya/Moya.git",
+      "state" : {
+        "revision" : "c263811c1f3dbf002be9bd83107f7cdc38992b26",
+        "version" : "15.0.3"
+      }
+    },
+    {
+      "identity" : "reactiveswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveCocoa/ReactiveSwift.git",
+      "state" : {
+        "revision" : "c43bae3dac73fdd3cb906bd5a1914686ca71ed3c",
+        "version" : "6.7.0"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift.git",
+      "state" : {
+        "revision" : "9dcaa4b333db437b0fbfaf453fad29069044a8b4",
+        "version" : "6.6.0"
       }
     }
   ],

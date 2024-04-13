@@ -2,7 +2,7 @@
 //  TrazzleApplication.swift
 //  Trazzle
 //
-//  Created by 연승주 on 3/31/24.
+//  Created by 홍주연 on 3/31/24.
 //
 
 import SwiftUI

@@ -8,12 +8,16 @@
 import SwiftUI
 import GoogleSignInSwift
 import GoogleSignIn
+import Combine
 
 struct LoginView: View {
     
     @Binding var isFullScreenOver: Bool
+    @ObservedObject var vm = LoginViewModel()
+    
     
     var body: some View {
+        
         ZStack(alignment: .top) {
             
             Color(.white)
@@ -23,6 +27,7 @@ struct LoginView: View {
                 Spacer()
                 Button(action: {
                     isFullScreenOver.toggle()
+                    
                 }, label: {
                     Image("close_icon")
                         .resizable()
@@ -41,7 +46,7 @@ struct LoginView: View {
             
             VStack {
                 Spacer()
-                KakaoButton()
+                KakaoButton(vm: vm)
                 GoogleButton()
                 AppleButton()
                 

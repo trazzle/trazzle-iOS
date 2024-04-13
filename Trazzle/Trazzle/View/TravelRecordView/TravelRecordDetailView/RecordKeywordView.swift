@@ -2,7 +2,7 @@
 //  RecordKeywordView.swift
 //  Trazzle
 //
-//  Created by 연승주 on 4/7/24.
+//  Created by 홍주연 on 4/7/24.
 //
 
 import SwiftUI

@@ -10,6 +10,8 @@ import CodableGeoJSON
 
 struct HomeView: View {
     
+    var homeVM = HomeViewModel.shared
+    
     // Title
     @Binding var titleText: String
     @State var navTitle: String = TrazzleConstants.launchTitleText
@@ -19,8 +21,7 @@ struct HomeView: View {
     
     // chart view
     @State var isShowingCountryStatisticsView = false
-    
-    var homeVM = HomeViewModel.shared
+   
     
     var body: some View {
 //        NavigationStack {
@@ -68,11 +69,12 @@ struct HomeView: View {
                         },
                         content: {
                             if LoginManager.shared.isLoggedIn {
-                                // 로그인 처리 후 메인화면 리로드
-                            } else {
-                                // FullScreenCover로 처리
+                                
+                            }
+                            else {
                                 LoginView(isFullScreenOver: $isFullSceenOver)
                             }
+                           
                         })
                 }
                 
