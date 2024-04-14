@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ContentView: View {
+    
+    @State private var isPresented = false
+    @State private var selectedTab: Int = 0
     
     init() {
         // MARK: TabBar
@@ -19,7 +23,7 @@ struct ContentView: View {
     }
     
     var body: some View {
-        TabView {
+        TabView(selection: $selectedTab) {
             NavigationStack {
                 HomeView(titleText: .constant(TrazzleConstants.launchTitleText))
             }
@@ -28,6 +32,7 @@ struct ContentView: View {
                     .renderingMode(.template)
                 Text("홈")
             }
+            .tag(0)
             
             NavigationStack {
                 TravelRecordCollectionView()
@@ -37,9 +42,30 @@ struct ContentView: View {
                     .renderingMode(.template)
                 Text("지도집")
             }
+            .tag(1)
             .toolbar(.visible, for: .tabBar)
         }
         .tint(.p500)
+        .onChange(of: selectedTab) {
+            if $0 == 1 {
+                if !LoginManager.shared.isLoggedIn {
+                    self.selectedTab = 0
+                }
+            }
+            else if $0 == 0, !LoginManager.shared.isLoggedIn {
+                isPresented.toggle()
+            }
+            else {
+                self.selectedTab = $0
+            }
+           
+        }
+        .fullScreenCover(
+            isPresented: $isPresented,
+            content: {
+                LoginView(isFullScreenOver: $isPresented)
+            })
+        
     }
 }
 

@@ -19,9 +19,34 @@ class LoginViewModel: ObservableObject {
             .sink(receiveCompletion: { error in
                 switch error {
                 case .finished:
-                    print("finish")
                     // 로그인 성공
                     self.isLogined = true //🧩
+                    print("finish")
+                case .failure(let failure):
+                    print("fail \(failure.localizedDescription)")
+                }
+            
+        }, receiveValue: { result in
+            switch result {
+            case .success(let data):
+                LoginManager.shared.user = data
+                print("login success: \(data)")
+            case .failure(let error):
+                print(error.message)
+            }
+        })
+        .store(in: &cancellable)
+    }
+    
+    // 테스트로그인
+    func dotestLogin(account: String) {
+        NetworkService.shared.testLogin(account: account)
+            .sink(receiveCompletion: { error in
+                switch error {
+                case .finished:
+                    // 로그인 성공
+                    self.isLogined = true //🧩
+                    print("finish")
                 case .failure(let failure):
                     print("fail")
                 }
@@ -29,7 +54,8 @@ class LoginViewModel: ObservableObject {
         }, receiveValue: { result in
             switch result {
             case .success(let data):
-                print("success")
+                LoginManager.shared.user = data
+                print("login success: \(data)")
             case .failure(let error):
                 print(error.message)
             }

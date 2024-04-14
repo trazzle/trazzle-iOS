@@ -77,8 +77,13 @@ extension Color {
     static var g900: Color {
         return Color(hex: "121616")
     }
+    
     static var white60: Color {
         return Color.white.opacity(0.6)
+    }
+    
+    static var sy800 : Color {
+        return Color(hex: "FA922C")
     }
     
 }

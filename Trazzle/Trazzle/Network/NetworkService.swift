@@ -21,6 +21,10 @@ class NetworkService {
     func kakaoLogin(accessToken: String) -> AnyPublisher<TZResult<User>, TZError> {
         return request(.kakaoLogin(accessToken: accessToken), type: User.self)
     }
+    
+    func testLogin(account: String) -> AnyPublisher<TZResult<User>, TZError> {
+        return request(.testLogin(account: account), type: User.self)
+    }
 }
 
 extension NetworkService {
