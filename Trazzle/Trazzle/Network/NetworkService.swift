@@ -18,12 +18,22 @@ class NetworkService {
         provider = MoyaProvider<TrazzleAPI>()
     }
     
+    // MARK: Login
     func kakaoLogin(accessToken: String) -> AnyPublisher<TZResult<User>, TZError> {
         return request(.kakaoLogin(accessToken: accessToken), type: User.self)
     }
     
     func testLogin(account: String) -> AnyPublisher<TZResult<User>, TZError> {
         return request(.testLogin(account: account), type: User.self)
+    }
+    
+    // MARK: Profile
+    func editProfile(name: String, 
+                     intro: String,
+                     profileImageFile: String) -> AnyPublisher<TZResult<User>, TZError> {
+        return request(.editProfile(name: name,
+                                    intro: intro, 
+                                    profileImageFile: profileImageFile), type: User.self)
     }
 }
 

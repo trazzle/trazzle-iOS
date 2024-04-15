@@ -12,6 +12,7 @@ enum TrazzleAPI {
     // MARK: Login
     case testLogin(account: String)
     case kakaoLogin(accessToken: String)
+    case editProfile(name: String, intro: String, profileImageFile: String)
 }
 
 extension TrazzleAPI: TargetType {
@@ -24,6 +25,8 @@ extension TrazzleAPI: TargetType {
         // MARK: Login
         case .testLogin: return "users/sign-in/account"
         case .kakaoLogin: return "users/sign-in/kakao"
+        // MARK: Profile
+        case .editProfile: return "users/profile"
         }
     }
     
@@ -36,6 +39,7 @@ extension TrazzleAPI: TargetType {
     var task: Moya.Task {
         var params: [String:Any] = [:]
         switch self {
+        // MARK: Login
         case .testLogin(let account):
             params["account"] = account
             return .requestParameters(parameters: params, encoding: URLEncoding.default)
@@ -43,6 +47,14 @@ extension TrazzleAPI: TargetType {
         case let .kakaoLogin(accessToken):
             params["accessToken"] = accessToken
             params["oauthProvider"] = LoginProviderType.kakao.typeName()
+            return .requestParameters(parameters: params, encoding: URLEncoding.default)
+            
+        // MARK: Profile
+        case .editProfile(name: let name, intro: let intro, profileImageFile: let profileImageFile):
+            params["accessToken"] = LoginManager.shared.user?.access_token ?? ""
+            params["name"] = name
+            params["intro"] = intro
+            params["profileImageFile"] = profileImageFile
             return .requestParameters(parameters: params, encoding: URLEncoding.default)
         }
     }

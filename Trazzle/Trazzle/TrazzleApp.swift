@@ -13,6 +13,8 @@ import GoogleSignIn
 @main
 struct TrazzleApp: App {
     
+//    @UIApplicationDelegateAdaptor var delegate: TZAppDelegate
+    
     init() {        
         // kakao SDK 초기화
         KakaoSDK.initSDK(appKey: "a9cf757f00972eaeff4befd171abe6b1")

@@ -11,4 +11,6 @@ class TrazzleApplication {
     static func getNotchHeight() -> CGFloat? {
         return UIApplication.shared.connectedScenes.first?.inputView?.safeAreaLayoutGuide.layoutFrame.height
     }
+    
+    static var serverUrl = "https://trazzle.p-e.kr/api/"
 }
