@@ -77,6 +77,9 @@
 		997F29C12BC18B3400F0244A /* TravelRecordCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997F29C02BC18B3400F0244A /* TravelRecordCollectionView.swift */; };
 		99AF4E792BC1B8D800C77BB7 /* RecordKeywordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF4E782BC1B8D800C77BB7 /* RecordKeywordView.swift */; };
 		99FD7C4F2BCD8A610051BDCE /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FD7C4E2BCD8A610051BDCE /* CustomTextView.swift */; };
+		99FD7C512BCD93F10051BDCE /* TZLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FD7C502BCD93F10051BDCE /* TZLoadingView.swift */; };
+		99FD7C542BCD948D0051BDCE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 99FD7C532BCD948D0051BDCE /* Lottie */; };
+		99FD7C562BCD96A20051BDCE /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 99FD7C552BCD96A20051BDCE /* loading.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,6 +148,8 @@
 		997F29C02BC18B3400F0244A /* TravelRecordCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelRecordCollectionView.swift; sourceTree = "<group>"; };
 		99AF4E782BC1B8D800C77BB7 /* RecordKeywordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordKeywordView.swift; sourceTree = "<group>"; };
 		99FD7C4E2BCD8A610051BDCE /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		99FD7C502BCD93F10051BDCE /* TZLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZLoadingView.swift; sourceTree = "<group>"; };
+		99FD7C552BCD96A20051BDCE /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +159,7 @@
 			files = (
 				6C90AD992BB300BA00C4C411 /* GoogleSignIn in Frameworks */,
 				6C2A5E472BB2B96400E224BC /* KakaoSDKCommon in Frameworks */,
+				99FD7C542BCD948D0051BDCE /* Lottie in Frameworks */,
 				9915C6152BCA617500C94273 /* Moya in Frameworks */,
 				135AA9A52BB1DB3900965EAA /* CodableGeoJSON in Frameworks */,
 				9915C6132BCA617500C94273 /* CombineMoya in Frameworks */,
@@ -274,8 +280,8 @@
 		135AA9AF2BB1E13F00965EAA /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				99FD7C572BCD96A70051BDCE /* json */,
 				9915C6082BC69EAF00C94273 /* Images */,
-				135AA9B02BB1E15600965EAA /* world.json */,
 				135AA98F2BB071ED00965EAA /* Assets.xcassets */,
 			);
 			path = resources;
@@ -403,6 +409,7 @@
 				992E30572BCC062B0060B681 /* ImageViewModel.swift */,
 				992E30592BCC06510060B681 /* TZImageView.swift */,
 				99FD7C4E2BCD8A610051BDCE /* CustomTextView.swift */,
+				99FD7C502BCD93F10051BDCE /* TZLoadingView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -445,6 +452,15 @@
 			path = TravelRecordDetailView;
 			sourceTree = "<group>";
 		};
+		99FD7C572BCD96A70051BDCE /* json */ = {
+			isa = PBXGroup;
+			children = (
+				135AA9B02BB1E15600965EAA /* world.json */,
+				99FD7C552BCD96A20051BDCE /* loading.json */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -470,6 +486,7 @@
 				6C90AD9A2BB300BA00C4C411 /* GoogleSignInSwift */,
 				9915C6122BCA617500C94273 /* CombineMoya */,
 				9915C6142BCA617500C94273 /* Moya */,
+				99FD7C532BCD948D0051BDCE /* Lottie */,
 			);
 			productName = Trazzle;
 			productReference = 135AA9882BB071EB00965EAA /* Trazzle.app */;
@@ -504,6 +521,7 @@
 				6C2A5E412BB2B96400E224BC /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
 				6C90AD972BB300BA00C4C411 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				9915C6112BCA617500C94273 /* XCRemoteSwiftPackageReference "Moya" */,
+				99FD7C522BCD948D0051BDCE /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 135AA9892BB071EB00965EAA /* Products */;
 			projectDirPath = "";
@@ -521,6 +539,7 @@
 			files = (
 				135AA9B12BB1E15600965EAA /* world.json in Resources */,
 				9915C6092BC69EAF00C94273 /* launch_icon.png in Resources */,
+				99FD7C562BCD96A20051BDCE /* loading.json in Resources */,
 				135AA9932BB071ED00965EAA /* Preview Assets.xcassets in Resources */,
 				9915C60C2BC69EC800C94273 /* LaunchScreen.storyboard in Resources */,
 				135AA9902BB071ED00965EAA /* Assets.xcassets in Resources */,
@@ -541,6 +560,7 @@
 				99AF4E792BC1B8D800C77BB7 /* RecordKeywordView.swift in Sources */,
 				135AA9A82BB1DBEC00965EAA /* GeoJSONMapDrawer.swift in Sources */,
 				9969ED782BB7DE1A008C1B07 /* RecordUserInfoView.swift in Sources */,
+				99FD7C512BCD93F10051BDCE /* TZLoadingView.swift in Sources */,
 				992E30552BCC03420060B681 /* TravelRecordViewModel.swift in Sources */,
 				9969ED7A2BB7DFDF008C1B07 /* RecordTitleHeaderView.swift in Sources */,
 				136E2E352BB7B88F00359B48 /* RecordDetailView.swift in Sources */,
@@ -849,6 +869,14 @@
 				minimumVersion = 15.0.0;
 			};
 		};
+		99FD7C522BCD948D0051BDCE /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -891,6 +919,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9915C6112BCA617500C94273 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
+		};
+		99FD7C532BCD948D0051BDCE /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99FD7C522BCD948D0051BDCE /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
