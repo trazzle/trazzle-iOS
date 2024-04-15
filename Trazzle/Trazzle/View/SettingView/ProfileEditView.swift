@@ -13,10 +13,8 @@ struct ProfileEditView: View {
     
     @State var user: User
     @State private var profileBio: String
-    @State private var isFocused: Bool
+    @State private var height: CGFloat = 30
     
-    // imagePermissionManager
-    private let permissionManager = PermissionsManager()
     private let profileEditVM: ProfileEditViewModel
     
     // imagePicker
@@ -24,15 +22,16 @@ struct ProfileEditView: View {
     @State var selectedUIImage: UIImage?
     @State var image: Image?
     
+    // button
+    @State private var isChanged: Bool
+    
     init(user: User, _ profileBio: String = "") {
         self.user = user
         self.profileBio = user.intro ?? ""
-        self.isFocused = false
+        self.isChanged = false
         
         profileEditVM = ProfileEditViewModel(user: user)
     }
-    
-    let textLimit = 50 //Your limit
     
     var body: some View {
         VStack(spacing: 16) {
@@ -106,8 +105,16 @@ struct ProfileEditView: View {
             }
             // 프로필 메세지 수정 영역
             VStack(spacing: 8) {
-                TextView(text: $profileBio)
-                    .onReceive(Just($profileBio)) { _ in limitText(textLimit) }
+                CustomTextView(
+                        text: $profileBio,
+                        height: $height,
+                        maxHeight: 150,
+                        textFont: .systemFont(ofSize: 14, weight: .regular),
+                        textColor: UIColor(Color.g700),
+                        textLimit: 50,
+                        placeholder: profileBio.count == 0 ? "소개글을 입력해주세요" : nil
+                      )
+                .frame(height: height)
                 
                 // 텍스트 숫자
                 Text(" \(profileBio.count) / 50")
