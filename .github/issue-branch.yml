@@ -1,5 +1,5 @@
 branchName: 'ios-${issue.number}'
-defaultBranch: 'master'
+defaultBranch: 'develop'
 branches:
   - label: '*'
     prefix: trazzle/
