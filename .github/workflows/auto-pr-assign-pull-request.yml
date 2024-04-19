@@ -1,0 +1,22 @@
+name: Auto Author Assign Pull Request
+
+on:
+  pull_request_target:
+    types: [opened, reopened, ready_for_review]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  assign-author:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: toshimaru/auto-author-assign@v2.0.0
+        with:
+          repo-token: ${{ secrets.POTENTIAL_GH_TOKEN }}
+  add-reivews:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: kentaro-m/auto-assign-action@v1.2.1
+        with:
+          configuration-path: '.github/participants.yml'
