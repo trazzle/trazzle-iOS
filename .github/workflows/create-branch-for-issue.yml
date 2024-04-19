@@ -11,7 +11,7 @@ on:
     types: [opened, closed]
     branches:
       - master
-      - 'feature/issue-**'
+      - 'trazzle/ios-**'
 
 jobs:
   create_issue_branch_job:
