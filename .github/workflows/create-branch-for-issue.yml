@@ -10,7 +10,7 @@ on:
     # PR이 opend, closed 이벤트 발생시
     types: [opened, closed]
     branches:
-      - master
+      - develop
       - 'trazzle/ios-**'
 
 jobs:
