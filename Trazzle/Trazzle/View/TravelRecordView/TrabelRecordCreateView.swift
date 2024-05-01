@@ -72,6 +72,7 @@ struct TrabelRecordCreateView: View {
                                             displayedComponents: [.date]
                                           )
                                           .blendMode(.destinationOver)
+                                        
                                       }
                                       .padding()
                                       .foregroundColor(.g500)
@@ -94,13 +95,53 @@ struct TrabelRecordCreateView: View {
                                 .padding(.horizontal)
                             
                             Text("0/280")
+                                .frame(width: .infinity, alignment: .trailing)
                                 .padding()
                                 .foregroundColor(.g200)
-                                .frame(width: .infinity, alignment: .trailing)
                             
                         }.overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.g100, lineWidth: 1))
                             .padding(.horizontal)
+                            .frame(width: .infinity)
                         
+                        
+                        //사진
+                        HStack {
+                            Text("여행기")
+                                .foregroundColor(.g900)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding([.horizontal, .top])
+                        
+                        HStack {
+                            Button(action: {
+                                // 버튼이 클릭되었을 때 수행할 작업
+                            }) {
+                                Text("순서 변경")
+                                    .frame(maxWidth: .infinity)
+                                    .foregroundColor(.g500)
+                                    .padding()
+                                    .background(Color.g100)
+                                    .cornerRadius(16)
+                                    
+                            }.frame(maxWidth: .infinity)
+                                .padding(.leading)
+                            
+                            Button(action: {
+                                // 버튼이 클릭되었을 때 수행할 작업
+                            }) {
+                                Text("사진 등록")
+                                    .frame(maxWidth: .infinity)
+                                    .foregroundColor(.white)
+                                    .padding()
+                                    .background(Color.mainGreen)
+                                    .cornerRadius(16)
+                            }.frame(maxWidth: .infinity)
+                                .padding(.trailing)
+                        }
+                        
+                        //완료버튼
+                        MainButton(buttonText: "완료")
+                            .padding()
                     }
                 }
                 
