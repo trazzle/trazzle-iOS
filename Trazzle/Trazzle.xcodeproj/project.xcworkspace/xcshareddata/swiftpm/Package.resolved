@@ -1,5 +1,5 @@
 {
-  "originHash" : "d6b6d6a69603bf064b12dde41a0340d56c8fb88cebc4379893fc7c5d75a5e181",
+  "originHash" : "9c1ba576ad85b0f42c1db7d0cf21f9a34f18328d486a5cee1b361dbc4dc5d118",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -78,8 +78,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/airbnb/lottie-ios.git",
       "state" : {
-        "revision" : "ab15129d567eda5da0631fcba23de60144a612f4",
-        "version" : "4.4.2"
+        "revision" : "769b88d83a42ca8d5572b020c96f47e3690b3796",
+        "version" : "4.4.3"
       }
     },
     {
@@ -107,6 +107,15 @@
       "state" : {
         "revision" : "9dcaa4b333db437b0fbfaf453fad29069044a8b4",
         "version" : "6.6.0"
+      }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit.git",
+      "state" : {
+        "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
+        "version" : "5.7.1"
       }
     }
   ],

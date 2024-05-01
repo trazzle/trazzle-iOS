@@ -80,6 +80,8 @@
 		99FD7C512BCD93F10051BDCE /* TZLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FD7C502BCD93F10051BDCE /* TZLoadingView.swift */; };
 		99FD7C542BCD948D0051BDCE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 99FD7C532BCD948D0051BDCE /* Lottie */; };
 		99FD7C562BCD96A20051BDCE /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 99FD7C552BCD96A20051BDCE /* loading.json */; };
+		C1395EE72BE27FE300C2C06B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C1395EE62BE27FE300C2C06B /* SnapKit */; };
+		C1395EE92BE27FE300C2C06B /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C1395EE82BE27FE300C2C06B /* SnapKit-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -166,6 +168,8 @@
 				6C90AD9B2BB300BA00C4C411 /* GoogleSignInSwift in Frameworks */,
 				6C2A5E432BB2B96400E224BC /* KakaoSDK in Frameworks */,
 				6C2A5E452BB2B96400E224BC /* KakaoSDKAuth in Frameworks */,
+				C1395EE92BE27FE300C2C06B /* SnapKit-Dynamic in Frameworks */,
+				C1395EE72BE27FE300C2C06B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +491,8 @@
 				9915C6122BCA617500C94273 /* CombineMoya */,
 				9915C6142BCA617500C94273 /* Moya */,
 				99FD7C532BCD948D0051BDCE /* Lottie */,
+				C1395EE62BE27FE300C2C06B /* SnapKit */,
+				C1395EE82BE27FE300C2C06B /* SnapKit-Dynamic */,
 			);
 			productName = Trazzle;
 			productReference = 135AA9882BB071EB00965EAA /* Trazzle.app */;
@@ -522,6 +528,7 @@
 				6C90AD972BB300BA00C4C411 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				9915C6112BCA617500C94273 /* XCRemoteSwiftPackageReference "Moya" */,
 				99FD7C522BCD948D0051BDCE /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				C1395EE52BE27FE300C2C06B /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 135AA9892BB071EB00965EAA /* Products */;
 			projectDirPath = "";
@@ -877,6 +884,14 @@
 				minimumVersion = 4.4.2;
 			};
 		};
+		C1395EE52BE27FE300C2C06B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -924,6 +939,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 99FD7C522BCD948D0051BDCE /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		C1395EE62BE27FE300C2C06B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1395EE52BE27FE300C2C06B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		C1395EE82BE27FE300C2C06B /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1395EE52BE27FE300C2C06B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
