@@ -9,7 +9,7 @@ import UIKit
 import Lottie
 import SnapKit
 
-@MainActor
+//@MainActor
 class TZLoadingView {
     
     static let shared = TZLoadingView()
@@ -33,37 +33,42 @@ class TZLoadingView {
     }()
     
     func show() {
-        if isShowing == false {
-            isShowing = true
-            
-            guard let keyWindow = UIApplication.shared.keyWindow else { return }
-            
-            // backgroundView
-            keyWindow.addSubview(backgroundView)
-            backgroundView.snp.makeConstraints {
-                $0.leading.trailing.top.bottom.equalToSuperview()
-            }
-            // animationView
-            animationView.play()
-            backgroundView.addSubview(animationView)
-            animationView.snp.makeConstraints {
-                $0.centerX.centerY.equalToSuperview()
-                $0.width.equalTo(60)
-                $0.height.equalTo(30)
+        DispatchQueue.main.async {
+            if self.isShowing == false {
+                self.isShowing = true
+                
+                guard let keyWindow = UIApplication.shared.keyWindow else { return }
+                
+                // backgroundView
+                keyWindow.addSubview(self.backgroundView)
+                self.backgroundView.snp.makeConstraints {
+                    $0.leading.trailing.top.bottom.equalToSuperview()
+                }
+                // animationView
+                self.animationView.play()
+                self.backgroundView.addSubview(self.animationView)
+                self.animationView.snp.makeConstraints {
+                    $0.centerX.centerY.equalToSuperview()
+                    $0.width.equalTo(60)
+                    $0.height.equalTo(30)
+                }
             }
         }
     }
     
     func hide() {
-        if isShowing == true {
-            isShowing = false
-            
-            // backgroundView
-            backgroundView.removeFromSuperview()
-            
-            // animationView
-            animationView.stop()
-            animationView.removeFromSuperview()
+        DispatchQueue.main.async {
+            if self.isShowing == true {
+                self.isShowing = false
+                
+                // backgroundView
+                self.backgroundView.removeFromSuperview()
+                
+                // animationView
+                self.animationView.stop()
+                self.animationView.removeFromSuperview()
+            }
         }
     }
 }
+
