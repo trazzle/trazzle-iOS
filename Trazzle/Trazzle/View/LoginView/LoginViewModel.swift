@@ -17,49 +17,33 @@ class LoginViewModel: ObservableObject {
     func doKakaoLogin(accessToken: String) {
         NetworkService.shared.kakaoLogin(accessToken: accessToken)
             .sink(receiveCompletion: { error in
-                switch error {
-                case .finished:
-                    // 로그인 성공
-                    self.isLogined = true //🧩
-                    print("finish")
-                case .failure(let failure):
-                    print("fail \(failure.localizedDescription)")
-                }
-            
-        }, receiveValue: { result in
-            switch result {
-            case .success(let data):
+                TZLoadingView.shared.hide()
+                print(error)
+            }, receiveValue: { data in
+                TZLoadingView.shared.hide()
+                // 🧩 로그인 성공
+                self.isLogined = true
+                
                 LoginManager.shared.user = data
                 print("login success: \(data)")
-            case .failure(let error):
-                print(error.message)
-            }
-        })
-        .store(in: &cancellable)
+            })
+            .store(in: &cancellable)
     }
-    
-    // 테스트로그인
+
+    // 테스트 로그인
     func dotestLogin(account: String) {
         NetworkService.shared.testLogin(account: account)
             .sink(receiveCompletion: { error in
-                switch error {
-                case .finished:
-                    // 로그인 성공
-                    self.isLogined = true //🧩
-                    print("finish")
-                case .failure(let failure):
-                    print("fail")
-                }
-            
-        }, receiveValue: { result in
-            switch result {
-            case .success(let data):
+                TZLoadingView.shared.hide()
+                print(error)
+            }, receiveValue: { data in
+                TZLoadingView.shared.hide()
+                // 🧩 로그인 성공
+                self.isLogined = true
+                
                 LoginManager.shared.user = data
                 print("login success: \(data)")
-            case .failure(let error):
-                print(error.message)
-            }
-        })
+            })
         .store(in: &cancellable)
     }
     
