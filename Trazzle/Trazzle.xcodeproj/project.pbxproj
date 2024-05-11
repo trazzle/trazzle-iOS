@@ -45,14 +45,43 @@
 		6CC20B282BB4637C003C3ABE /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC20B272BB4637C003C3ABE /* CountryListView.swift */; };
 		6CC20B2A2BB46497003C3ABE /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC20B292BB46497003C3ABE /* Country.swift */; };
 		6CC523F72BB4487200B7C3D0 /* AppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC523F62BB4487200B7C3D0 /* AppleButton.swift */; };
-		993092B62BC69B6100B5010E /* launch_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 993092B52BC69B6100B5010E /* launch_icon.png */; };
-		993118F22BB9110F00AA7C71 /* TravelRecordCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993118F12BB9110F00AA7C71 /* TravelRecordCollectionView.swift */; };
-		9969ED782BB7DE1A008C1B07 /* TravelDetailAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9969ED772BB7DE1A008C1B07 /* TravelDetailAccessoryView.swift */; };
-		9969ED7A2BB7DFDF008C1B07 /* RecordTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9969ED792BB7DFDF008C1B07 /* RecordTitleView.swift */; };
+		9915C6092BC69EAF00C94273 /* launch_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9915C6072BC69EAF00C94273 /* launch_icon.png */; };
+		9915C60C2BC69EC800C94273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9915C60A2BC69EC800C94273 /* LaunchScreen.storyboard */; };
+		9915C6102BC6AF1200C94273 /* SnapCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9915C60F2BC6AF1200C94273 /* SnapCarouselView.swift */; };
+		9915C6132BCA617500C94273 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 9915C6122BCA617500C94273 /* CombineMoya */; };
+		9915C6152BCA617500C94273 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 9915C6142BCA617500C94273 /* Moya */; };
+		9915C6182BCA61B900C94273 /* TrazzleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9915C6172BCA61B900C94273 /* TrazzleAPI.swift */; };
+		9915C61B2BCA6A0400C94273 /* LoginProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9915C61A2BCA6A0400C94273 /* LoginProviderType.swift */; };
+		9915C61F2BCA6B5300C94273 /* TZResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9915C61E2BCA6B5300C94273 /* TZResult.swift */; };
+		9915C6212BCA6B9000C94273 /* TZError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9915C6202BCA6B9000C94273 /* TZError.swift */; };
+		9915C6232BCA6BBC00C94273 /* TZResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9915C6222BCA6BBC00C94273 /* TZResponse.swift */; };
+		9915C6282BCA741900C94273 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9915C6272BCA741900C94273 /* NetworkService.swift */; };
+		9915C62A2BCA872D00C94273 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9915C6292BCA872D00C94273 /* LoginViewModel.swift */; };
+		992E304B2BCBE3D70060B681 /* ProfileEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E304A2BCBE3D70060B681 /* ProfileEditView.swift */; };
+		992E304F2BCBF65C0060B681 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E304E2BCBF65C0060B681 /* SettingViewModel.swift */; };
+		992E30512BCBFF280060B681 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E30502BCBFF280060B681 /* UIApplication+Extension.swift */; };
+		992E30552BCC03420060B681 /* TravelRecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E30542BCC03420060B681 /* TravelRecordViewModel.swift */; };
+		992E30582BCC062B0060B681 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E30572BCC062B0060B681 /* ImageViewModel.swift */; };
+		992E305A2BCC06510060B681 /* TZImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E30592BCC06510060B681 /* TZImageView.swift */; };
+		992E30662BCD3C8F0060B681 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E30652BCD3C8F0060B681 /* ImagePicker.swift */; };
+		992E30692BCD43180060B681 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E30682BCD43180060B681 /* PermissionManager.swift */; };
+		992E306C2BCD68950060B681 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E306B2BCD68950060B681 /* UIImage+Extension.swift */; };
+		992E306E2BCD6A510060B681 /* ProfileEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992E306D2BCD6A510060B681 /* ProfileEditViewModel.swift */; };
+		995D74992BB86BC70093DD20 /* TrazzleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D74982BB86BC70093DD20 /* TrazzleConstants.swift */; };
+		995D749B2BB877910093DD20 /* TrazzleApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D749A2BB877910093DD20 /* TrazzleApplication.swift */; };
+		9969ED782BB7DE1A008C1B07 /* RecordUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9969ED772BB7DE1A008C1B07 /* RecordUserInfoView.swift */; };
+		9969ED7A2BB7DFDF008C1B07 /* RecordTitleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9969ED792BB7DFDF008C1B07 /* RecordTitleHeaderView.swift */; };
 		9969ED7E2BB7F23A008C1B07 /* WrappedHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9969ED7D2BB7F23A008C1B07 /* WrappedHStack.swift */; };
 		9969ED802BB821AA008C1B07 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9969ED7F2BB821AA008C1B07 /* CarouselView.swift */; };
-		99AC4DAB2BB90E45005C256C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AC4DAA2BB90E45005C256C /* String+Extension.swift */; };
-		99E3F37A2BC14A4B0077F0D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E3F3792BC14A4B0077F0D8 /* LaunchScreen.storyboard */; };
+		997F29BF2BC18AE900F0244A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997F29BE2BC18AE900F0244A /* String+Extension.swift */; };
+		997F29C12BC18B3400F0244A /* TravelRecordCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997F29C02BC18B3400F0244A /* TravelRecordCollectionView.swift */; };
+		99AF4E792BC1B8D800C77BB7 /* RecordKeywordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF4E782BC1B8D800C77BB7 /* RecordKeywordView.swift */; };
+		99FD7C4F2BCD8A610051BDCE /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FD7C4E2BCD8A610051BDCE /* CustomTextView.swift */; };
+		99FD7C512BCD93F10051BDCE /* TZLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FD7C502BCD93F10051BDCE /* TZLoadingView.swift */; };
+		99FD7C542BCD948D0051BDCE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 99FD7C532BCD948D0051BDCE /* Lottie */; };
+		99FD7C562BCD96A20051BDCE /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 99FD7C552BCD96A20051BDCE /* loading.json */; };
+		C1395EE72BE27FE300C2C06B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C1395EE62BE27FE300C2C06B /* SnapKit */; };
+		C1DA1D1F2BEFAD4700E8E994 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DA1D1E2BEFAD4700E8E994 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,14 +120,39 @@
 		6CC20B272BB4637C003C3ABE /* CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListView.swift; sourceTree = "<group>"; };
 		6CC20B292BB46497003C3ABE /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		6CC523F62BB4487200B7C3D0 /* AppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleButton.swift; sourceTree = "<group>"; };
-		993092B52BC69B6100B5010E /* launch_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_icon.png; sourceTree = "<group>"; };
-		993118F12BB9110F00AA7C71 /* TravelRecordCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelRecordCollectionView.swift; sourceTree = "<group>"; };
-		9969ED772BB7DE1A008C1B07 /* TravelDetailAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDetailAccessoryView.swift; sourceTree = "<group>"; };
-		9969ED792BB7DFDF008C1B07 /* RecordTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTitleView.swift; sourceTree = "<group>"; };
+		9915C6072BC69EAF00C94273 /* launch_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_icon.png; sourceTree = "<group>"; };
+		9915C60A2BC69EC800C94273 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9915C60F2BC6AF1200C94273 /* SnapCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarouselView.swift; sourceTree = "<group>"; };
+		9915C6172BCA61B900C94273 /* TrazzleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrazzleAPI.swift; sourceTree = "<group>"; };
+		9915C61A2BCA6A0400C94273 /* LoginProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProviderType.swift; sourceTree = "<group>"; };
+		9915C61E2BCA6B5300C94273 /* TZResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZResult.swift; sourceTree = "<group>"; };
+		9915C6202BCA6B9000C94273 /* TZError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZError.swift; sourceTree = "<group>"; };
+		9915C6222BCA6BBC00C94273 /* TZResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZResponse.swift; sourceTree = "<group>"; };
+		9915C6272BCA741900C94273 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		9915C6292BCA872D00C94273 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		992E304A2BCBE3D70060B681 /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
+		992E304E2BCBF65C0060B681 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		992E30502BCBFF280060B681 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		992E30542BCC03420060B681 /* TravelRecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelRecordViewModel.swift; sourceTree = "<group>"; };
+		992E30572BCC062B0060B681 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		992E30592BCC06510060B681 /* TZImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZImageView.swift; sourceTree = "<group>"; };
+		992E30652BCD3C8F0060B681 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		992E30682BCD43180060B681 /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
+		992E306B2BCD68950060B681 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		992E306D2BCD6A510060B681 /* ProfileEditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewModel.swift; sourceTree = "<group>"; };
+		995D74982BB86BC70093DD20 /* TrazzleConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrazzleConstants.swift; sourceTree = "<group>"; };
+		995D749A2BB877910093DD20 /* TrazzleApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrazzleApplication.swift; sourceTree = "<group>"; };
+		9969ED772BB7DE1A008C1B07 /* RecordUserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordUserInfoView.swift; sourceTree = "<group>"; };
+		9969ED792BB7DFDF008C1B07 /* RecordTitleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTitleHeaderView.swift; sourceTree = "<group>"; };
 		9969ED7D2BB7F23A008C1B07 /* WrappedHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedHStack.swift; sourceTree = "<group>"; };
 		9969ED7F2BB821AA008C1B07 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
-		99AC4DAA2BB90E45005C256C /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
-		99E3F3792BC14A4B0077F0D8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		997F29BE2BC18AE900F0244A /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		997F29C02BC18B3400F0244A /* TravelRecordCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelRecordCollectionView.swift; sourceTree = "<group>"; };
+		99AF4E782BC1B8D800C77BB7 /* RecordKeywordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordKeywordView.swift; sourceTree = "<group>"; };
+		99FD7C4E2BCD8A610051BDCE /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		99FD7C502BCD93F10051BDCE /* TZLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZLoadingView.swift; sourceTree = "<group>"; };
+		99FD7C552BCD96A20051BDCE /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		C1DA1D1E2BEFAD4700E8E994 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,10 +162,14 @@
 			files = (
 				6C90AD992BB300BA00C4C411 /* GoogleSignIn in Frameworks */,
 				6C2A5E472BB2B96400E224BC /* KakaoSDKCommon in Frameworks */,
+				99FD7C542BCD948D0051BDCE /* Lottie in Frameworks */,
+				9915C6152BCA617500C94273 /* Moya in Frameworks */,
 				135AA9A52BB1DB3900965EAA /* CodableGeoJSON in Frameworks */,
+				9915C6132BCA617500C94273 /* CombineMoya in Frameworks */,
 				6C90AD9B2BB300BA00C4C411 /* GoogleSignInSwift in Frameworks */,
 				6C2A5E432BB2B96400E224BC /* KakaoSDK in Frameworks */,
 				6C2A5E452BB2B96400E224BC /* KakaoSDKAuth in Frameworks */,
+				C1395EE72BE27FE300C2C06B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +197,12 @@
 			children = (
 				6C8435012BB717AC00617BE0 /* Trazzle.entitlements */,
 				6C90AD9C2BB304EF00C4C411 /* Info.plist */,
+				992E306A2BCD65FF0060B681 /* DataSet */,
+				992E30672BCD43050060B681 /* Manager */,
+				992E30562BCC061C0060B681 /* Component */,
+				995D74972BB86BB60093DD20 /* Constants */,
 				6C902D592BB6850F002829AA /* Extensions */,
+				9915C6162BCA619B00C94273 /* Network */,
 				135AA9A92BB1DCA000965EAA /* ViewModel */,
 				135AA9A62BB1DBDE00965EAA /* Model */,
 				135AA99F2BB089BD00965EAA /* View */,
@@ -162,7 +225,7 @@
 		135AA99F2BB089BD00965EAA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				99E3F3782BC14A3A0077F0D8 /* LaunchScreen */,
+				9915C60B2BC69EC800C94273 /* LaunchScreen */,
 				6C158B4A2BB6880F004B32CD /* CityListView */,
 				6CC20B262BB46367003C3ABE /* CountryListView */,
 				6C2A5E402BB2B82B00E224BC /* LoginView */,
@@ -185,6 +248,7 @@
 				6CB6F1232BB807E1006D212E /* Authorize.swift */,
 				6CB6F1252BB8181F006D212E /* User.swift */,
 				6CB6F1292BB83F4A006D212E /* LoginManager.swift */,
+				9915C61A2BCA6A0400C94273 /* LoginProviderType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,7 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				136E2E3B2BB7C76500359B48 /* TravelRecordCollectionView */,
-				136E2E3C2BB7C76F00359B48 /* TravelRecordDetailView */,
+				997F29C22BC18BA500F0244A /* TravelRecordDetailView */,
 			);
 			path = TravelRecordView;
 			sourceTree = "<group>";
@@ -220,8 +284,8 @@
 		135AA9AF2BB1E13F00965EAA /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				993092B42BC69B5300B5010E /* Images */,
-				135AA9B02BB1E15600965EAA /* world.json */,
+				99FD7C572BCD96A70051BDCE /* json */,
+				9915C6082BC69EAF00C94273 /* Images */,
 				135AA98F2BB071ED00965EAA /* Assets.xcassets */,
 			);
 			path = resources;
@@ -231,6 +295,9 @@
 			isa = PBXGroup;
 			children = (
 				136E2E372BB7BD0B00359B48 /* SettingView.swift */,
+				992E304E2BCBF65C0060B681 /* SettingViewModel.swift */,
+				992E304A2BCBE3D70060B681 /* ProfileEditView.swift */,
+				992E306D2BCD6A510060B681 /* ProfileEditViewModel.swift */,
 			);
 			path = SettingView;
 			sourceTree = "<group>";
@@ -238,23 +305,12 @@
 		136E2E3B2BB7C76500359B48 /* TravelRecordCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				993118F12BB9110F00AA7C71 /* TravelRecordCollectionView.swift */,
+				997F29C02BC18B3400F0244A /* TravelRecordCollectionView.swift */,
 				134A7B662BB700EA0006522F /* ProfileHeaderView.swift */,
 				136619922BB71EE200C5C76F /* TravelRecordCell.swift */,
+				992E30542BCC03420060B681 /* TravelRecordViewModel.swift */,
 			);
 			name = TravelRecordCollectionView;
-			sourceTree = "<group>";
-		};
-		136E2E3C2BB7C76F00359B48 /* TravelRecordDetailView */ = {
-			isa = PBXGroup;
-			children = (
-				136E2E342BB7B88F00359B48 /* RecordDetailView.swift */,
-				9969ED772BB7DE1A008C1B07 /* TravelDetailAccessoryView.swift */,
-				136E2E3D2BB7C79800359B48 /* RecordImageSlideView.swift */,
-				9969ED792BB7DFDF008C1B07 /* RecordTitleView.swift */,
-				9969ED7F2BB821AA008C1B07 /* CarouselView.swift */,
-			);
-			name = TravelRecordDetailView;
 			sourceTree = "<group>";
 		};
 		13DF06FA2BB5D68300DA4EE8 /* CountryStatisticView */ = {
@@ -280,6 +336,7 @@
 				6C90AD952BB2FF2700C4C411 /* GoogleButton.swift */,
 				6CC523F62BB4487200B7C3D0 /* AppleButton.swift */,
 				6C2A5E4A2BB2B9E900E224BC /* LoginView.swift */,
+				9915C6292BCA872D00C94273 /* LoginViewModel.swift */,
 			);
 			path = LoginView;
 			sourceTree = "<group>";
@@ -287,9 +344,12 @@
 		6C902D592BB6850F002829AA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				99AC4DAA2BB90E45005C256C /* String+Extension.swift */,
+				997F29BE2BC18AE900F0244A /* String+Extension.swift */,
 				6C902D572BB6850F002829AA /* Color+Extension.swift */,
 				6C902D582BB6850F002829AA /* View+Extension.swift */,
+				992E30502BCBFF280060B681 /* UIApplication+Extension.swift */,
+				992E306B2BCD68950060B681 /* UIImage+Extension.swift */,
+				C1DA1D1E2BEFAD4700E8E994 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -303,20 +363,107 @@
 			path = CountryListView;
 			sourceTree = "<group>";
 		};
-		993092B42BC69B5300B5010E /* Images */ = {
+		9915C6082BC69EAF00C94273 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				993092B52BC69B6100B5010E /* launch_icon.png */,
+				9915C6072BC69EAF00C94273 /* launch_icon.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
 		};
-		99E3F3782BC14A3A0077F0D8 /* LaunchScreen */ = {
+		9915C60B2BC69EC800C94273 /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
-				99E3F3792BC14A4B0077F0D8 /* LaunchScreen.storyboard */,
+				9915C60A2BC69EC800C94273 /* LaunchScreen.storyboard */,
 			);
 			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		9915C6162BCA619B00C94273 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9915C61C2BCA6B3A00C94273 /* Model */,
+				9915C6192BCA630B00C94273 /* Targets */,
+				9915C6272BCA741900C94273 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9915C6192BCA630B00C94273 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				9915C6172BCA61B900C94273 /* TrazzleAPI.swift */,
+			);
+			name = Targets;
+			sourceTree = "<group>";
+		};
+		9915C61C2BCA6B3A00C94273 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9915C61E2BCA6B5300C94273 /* TZResult.swift */,
+				9915C6202BCA6B9000C94273 /* TZError.swift */,
+				9915C6222BCA6BBC00C94273 /* TZResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		992E30562BCC061C0060B681 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				992E30652BCD3C8F0060B681 /* ImagePicker.swift */,
+				992E30572BCC062B0060B681 /* ImageViewModel.swift */,
+				992E30592BCC06510060B681 /* TZImageView.swift */,
+				99FD7C4E2BCD8A610051BDCE /* CustomTextView.swift */,
+				99FD7C502BCD93F10051BDCE /* TZLoadingView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		992E30672BCD43050060B681 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				992E30682BCD43180060B681 /* PermissionManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		992E306A2BCD65FF0060B681 /* DataSet */ = {
+			isa = PBXGroup;
+			children = (
+				995D749A2BB877910093DD20 /* TrazzleApplication.swift */,
+			);
+			path = DataSet;
+			sourceTree = "<group>";
+		};
+		995D74972BB86BB60093DD20 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				995D74982BB86BC70093DD20 /* TrazzleConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		997F29C22BC18BA500F0244A /* TravelRecordDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				136E2E342BB7B88F00359B48 /* RecordDetailView.swift */,
+				9969ED772BB7DE1A008C1B07 /* RecordUserInfoView.swift */,
+				136E2E3D2BB7C79800359B48 /* RecordImageSlideView.swift */,
+				9915C60F2BC6AF1200C94273 /* SnapCarouselView.swift */,
+				9969ED7F2BB821AA008C1B07 /* CarouselView.swift */,
+				9969ED792BB7DFDF008C1B07 /* RecordTitleHeaderView.swift */,
+				99AF4E782BC1B8D800C77BB7 /* RecordKeywordView.swift */,
+			);
+			path = TravelRecordDetailView;
+			sourceTree = "<group>";
+		};
+		99FD7C572BCD96A70051BDCE /* json */ = {
+			isa = PBXGroup;
+			children = (
+				135AA9B02BB1E15600965EAA /* world.json */,
+				99FD7C552BCD96A20051BDCE /* loading.json */,
+			);
+			path = json;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +489,10 @@
 				6C2A5E462BB2B96400E224BC /* KakaoSDKCommon */,
 				6C90AD982BB300BA00C4C411 /* GoogleSignIn */,
 				6C90AD9A2BB300BA00C4C411 /* GoogleSignInSwift */,
+				9915C6122BCA617500C94273 /* CombineMoya */,
+				9915C6142BCA617500C94273 /* Moya */,
+				99FD7C532BCD948D0051BDCE /* Lottie */,
+				C1395EE62BE27FE300C2C06B /* SnapKit */,
 			);
 			productName = Trazzle;
 			productReference = 135AA9882BB071EB00965EAA /* Trazzle.app */;
@@ -375,6 +526,9 @@
 				135AA9A32BB1DB3900965EAA /* XCRemoteSwiftPackageReference "CodableGeoJSON" */,
 				6C2A5E412BB2B96400E224BC /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
 				6C90AD972BB300BA00C4C411 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				9915C6112BCA617500C94273 /* XCRemoteSwiftPackageReference "Moya" */,
+				99FD7C522BCD948D0051BDCE /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				C1395EE52BE27FE300C2C06B /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 135AA9892BB071EB00965EAA /* Products */;
 			projectDirPath = "";
@@ -390,10 +544,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				993092B62BC69B6100B5010E /* launch_icon.png in Resources */,
 				135AA9B12BB1E15600965EAA /* world.json in Resources */,
-				99E3F37A2BC14A4B0077F0D8 /* LaunchScreen.storyboard in Resources */,
+				9915C6092BC69EAF00C94273 /* launch_icon.png in Resources */,
+				99FD7C562BCD96A20051BDCE /* loading.json in Resources */,
 				135AA9932BB071ED00965EAA /* Preview Assets.xcassets in Resources */,
+				9915C60C2BC69EC800C94273 /* LaunchScreen.storyboard in Resources */,
 				135AA9902BB071ED00965EAA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,43 +562,67 @@
 			files = (
 				6CC20B2A2BB46497003C3ABE /* Country.swift in Sources */,
 				6C90AD962BB2FF2700C4C411 /* GoogleButton.swift in Sources */,
+				995D74992BB86BC70093DD20 /* TrazzleConstants.swift in Sources */,
+				992E304F2BCBF65C0060B681 /* SettingViewModel.swift in Sources */,
+				99AF4E792BC1B8D800C77BB7 /* RecordKeywordView.swift in Sources */,
 				135AA9A82BB1DBEC00965EAA /* GeoJSONMapDrawer.swift in Sources */,
-				9969ED782BB7DE1A008C1B07 /* TravelDetailAccessoryView.swift in Sources */,
-				9969ED7A2BB7DFDF008C1B07 /* RecordTitleView.swift in Sources */,
+				9969ED782BB7DE1A008C1B07 /* RecordUserInfoView.swift in Sources */,
+				99FD7C512BCD93F10051BDCE /* TZLoadingView.swift in Sources */,
+				992E30552BCC03420060B681 /* TravelRecordViewModel.swift in Sources */,
+				9969ED7A2BB7DFDF008C1B07 /* RecordTitleHeaderView.swift in Sources */,
 				136E2E352BB7B88F00359B48 /* RecordDetailView.swift in Sources */,
 				136E2E382BB7BD0B00359B48 /* SettingView.swift in Sources */,
+				992E30692BCD43180060B681 /* PermissionManager.swift in Sources */,
+				9915C6102BC6AF1200C94273 /* SnapCarouselView.swift in Sources */,
+				997F29BF2BC18AE900F0244A /* String+Extension.swift in Sources */,
 				135AA99A2BB0872800965EAA /* HomeView.swift in Sources */,
+				992E30582BCC062B0060B681 /* ImageViewModel.swift in Sources */,
+				992E306E2BCD6A510060B681 /* ProfileEditViewModel.swift in Sources */,
 				9969ED7E2BB7F23A008C1B07 /* WrappedHStack.swift in Sources */,
+				9915C6282BCA741900C94273 /* NetworkService.swift in Sources */,
 				136E2E3E2BB7C79800359B48 /* RecordImageSlideView.swift in Sources */,
+				C1DA1D1F2BEFAD4700E8E994 /* UIColor+Extension.swift in Sources */,
 				6C158B502BB68C72004B32CD /* MainButton.swift in Sources */,
 				6CB222342BB5A80000C5EC46 /* SearchBar.swift in Sources */,
 				6CB6F1242BB807E1006D212E /* Authorize.swift in Sources */,
+				9915C6182BCA61B900C94273 /* TrazzleAPI.swift in Sources */,
+				992E30662BCD3C8F0060B681 /* ImagePicker.swift in Sources */,
 				6CC20B282BB4637C003C3ABE /* CountryListView.swift in Sources */,
 				13DF06FC2BB5D69800DA4EE8 /* CountryStatisticView.swift in Sources */,
 				135AA9AB2BB1DCAD00965EAA /* HomeViewModel.swift in Sources */,
-				993118F22BB9110F00AA7C71 /* TravelRecordCollectionView.swift in Sources */,
 				135AA98E2BB071EB00965EAA /* ContentView.swift in Sources */,
 				134A7B672BB700EA0006522F /* ProfileHeaderView.swift in Sources */,
+				997F29C12BC18B3400F0244A /* TravelRecordCollectionView.swift in Sources */,
 				6CC523F72BB4487200B7C3D0 /* AppleButton.swift in Sources */,
 				6C2A5E492BB2B98000E224BC /* KakaoButton.swift in Sources */,
 				13DF06F82BB5D63400DA4EE8 /* HomeNavView.swift in Sources */,
+				992E306C2BCD68950060B681 /* UIImage+Extension.swift in Sources */,
+				992E30512BCBFF280060B681 /* UIApplication+Extension.swift in Sources */,
 				6C2A5E4B2BB2B9E900E224BC /* LoginView.swift in Sources */,
 				136619932BB71EE200C5C76F /* TravelRecordCell.swift in Sources */,
 				9969ED802BB821AA008C1B07 /* CarouselView.swift in Sources */,
 				6C902D5A2BB68510002829AA /* Color+Extension.swift in Sources */,
+				99FD7C4F2BCD8A610051BDCE /* CustomTextView.swift in Sources */,
 				6CC523F72BB4487200B7C3D0 /* AppleButton.swift in Sources */,
 				6C2A5E492BB2B98000E224BC /* KakaoButton.swift in Sources */,
+				992E304B2BCBE3D70060B681 /* ProfileEditView.swift in Sources */,
 				6C158B5A2BB708CC004B32CD /* LoginSender.swift in Sources */,
 				6C158B542BB6DD2C004B32CD /* CategoryView.swift in Sources */,
 				13DF06F82BB5D63400DA4EE8 /* HomeNavView.swift in Sources */,
 				6C2A5E4B2BB2B9E900E224BC /* LoginView.swift in Sources */,
+				9915C62A2BCA872D00C94273 /* LoginViewModel.swift in Sources */,
+				992E305A2BCC06510060B681 /* TZImageView.swift in Sources */,
 				6C158B4C2BB6888C004B32CD /* CityListView.swift in Sources */,
 				6CB6F12A2BB83F4A006D212E /* LoginManager.swift in Sources */,
 				6CB6F1262BB8181F006D212E /* User.swift in Sources */,
+				9915C6232BCA6BBC00C94273 /* TZResponse.swift in Sources */,
 				6C902D5B2BB68510002829AA /* View+Extension.swift in Sources */,
 				135AA98C2BB071EB00965EAA /* TrazzleApp.swift in Sources */,
+				9915C61F2BCA6B5300C94273 /* TZResult.swift in Sources */,
+				9915C6212BCA6B9000C94273 /* TZError.swift in Sources */,
+				995D749B2BB877910093DD20 /* TrazzleApplication.swift in Sources */,
 				6C158B582BB7018A004B32CD /* City.swift in Sources */,
-				99AC4DAB2BB90E45005C256C /* String+Extension.swift in Sources */,
+				9915C61B2BCA6A0400C94273 /* LoginProviderType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,7 +760,6 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -597,6 +775,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -620,7 +799,6 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -636,6 +814,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -690,6 +869,30 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		9915C6112BCA617500C94273 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+		99FD7C522BCD948D0051BDCE /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.2;
+			};
+		};
+		C1395EE52BE27FE300C2C06B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -722,6 +925,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6C90AD972BB300BA00C4C411 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
+		};
+		9915C6122BCA617500C94273 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9915C6112BCA617500C94273 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		9915C6142BCA617500C94273 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9915C6112BCA617500C94273 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		99FD7C532BCD948D0051BDCE /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99FD7C522BCD948D0051BDCE /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		C1395EE62BE27FE300C2C06B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1395EE52BE27FE300C2C06B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

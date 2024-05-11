@@ -10,18 +10,16 @@ import SwiftUI
 
 struct ProfileHeaderView: View {
     
-    // test
-    let data = Array(1...1000).map { "목록 \($0)"}
+    @Binding var user: User
+
     let itemWidth: CGFloat = ((UIScreen.main.bounds.width / 2) - (16 * 2) - 7) / 2
     let columns = [GridItem(.adaptive(minimum: 160))]
-    
     
     var body: some View {
         VStack(alignment: .leading) {
             Group {
                 HStack {
-                    Image("book")
-                        .resizable()
+                    TZImageView(urlString: user.profileImageURL ?? "")
                         .scaledToFit()
                         .clipShape(Circle())
                         .overlay(Circle().stroke(Color.homeBgColor,
@@ -36,7 +34,7 @@ struct ProfileHeaderView: View {
                 
                 Spacer().frame(height: 16)
                 HStack {
-                    Text("김철수")
+                    Text(user.name)
                         .foregroundColor(.g900)
                         .font(.system(size: 22, weight: .semibold))
                     
@@ -46,7 +44,7 @@ struct ProfileHeaderView: View {
                         .frame(alignment: .bottomLeading)
                 }
                 Spacer().frame(height: 16)
-                Text("철수의 세계 여행, 즐거웠던 기억을 기록해두자! 가나다라마바")
+                Text(user.intro ?? "")
                     .foregroundColor(.g700)
                     .font(.system(size: 14, weight: .regular))
                 Spacer().frame(height: 20)
@@ -59,6 +57,7 @@ struct ProfileHeaderView: View {
 
 struct ProfileHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileHeaderView()
+        ProfileHeaderView(user: .constant(User(access_token: "", id: 0, account: "",
+                                               name: "홍주연", profileImageURL: nil, intro: nil)))
     }
 }

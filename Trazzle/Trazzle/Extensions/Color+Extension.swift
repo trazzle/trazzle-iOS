@@ -42,16 +42,12 @@ extension Color {
         return Color(hex: "FDFDFD")
     }
     
-    static var grayShadow: Color {
-        return Color("F2F4F5")
-    }
-    
-    static var grayColor: Color {
-        return Color(hex: "F2F4F5")
+    static var shadowColor: Color {
+        return Color(hex: "D9D9D9")
     }
     
     static var g50: Color {
-        return Color(hex: "D9D9D9")
+        return Color(hex: "F2F4F5")
     }
     
     static var g100: Color {
@@ -81,6 +77,15 @@ extension Color {
     static var g900: Color {
         return Color(hex: "121616")
     }
+    
+    static var white60: Color {
+        return Color.white.opacity(0.6)
+    }
+    
+    static var sy800 : Color {
+        return Color(hex: "FA922C")
+    }
+    
 }
 
 extension Color {

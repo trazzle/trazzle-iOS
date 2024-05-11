@@ -7,9 +7,9 @@
 
 import Foundation
 
-class LoginManager {
+class LoginManager: ObservableObject {
     static let shared = LoginManager()
-    var user: User?
+    @Published var user: User?
     
     private init() {}
     

@@ -48,9 +48,9 @@ struct HomeNavView: View {
                     .frame(width: 48, height: 48)
                     Spacer().frame(width: 4)
                 }
-                CountryStatisticView(isRecordView: false)
-                    .frame(height: 109)
-                    .hide(if: !isShowingCountryStatisticsView)
+//                CountryStatisticView(isRecordView: false)
+//                    .frame(height: 109)
+//                    .hide(if: !isShowingCountryStatisticsView)
             }
         }
     }
