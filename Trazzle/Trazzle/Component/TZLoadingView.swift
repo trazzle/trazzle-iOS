@@ -17,7 +17,16 @@ class TZLoadingView {
     
     lazy var backgroundView: UIView = {
         let view = UIView()
-        view.backgroundColor = .clear
+        view.backgroundColor = UIColor(hexString: "121616", alpha: 0.65)
+        return view
+    }()
+    
+    lazy var animationBgView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor(hexString: "FFFFFF", alpha: 0.8)
+        view.clipsToBounds = true
+        view.layer.cornerRadius  = 12
+        view.layer.masksToBounds = true
         return view
     }()
     
@@ -44,13 +53,21 @@ class TZLoadingView {
                 self.backgroundView.snp.makeConstraints {
                     $0.leading.trailing.top.bottom.equalToSuperview()
                 }
+                
+                // animationBgView
+                self.backgroundView.addSubview(self.animationBgView)
+                self.animationBgView.snp.makeConstraints {
+                    $0.centerX.centerY.equalToSuperview()
+                    $0.width.height.equalTo(68)
+                }
+                
                 // animationView
                 self.animationView.play()
                 self.backgroundView.addSubview(self.animationView)
                 self.animationView.snp.makeConstraints {
                     $0.centerX.centerY.equalToSuperview()
-                    $0.width.equalTo(60)
-                    $0.height.equalTo(30)
+                    $0.width.equalTo(50)
+                    $0.height.equalTo(20)
                 }
             }
         }
@@ -64,6 +81,9 @@ class TZLoadingView {
                 // backgroundView
                 self.backgroundView.removeFromSuperview()
                 
+                //animationBgView
+                self.animationBgView.removeFromSuperview()
+                
                 // animationView
                 self.animationView.stop()
                 self.animationView.removeFromSuperview()
@@ -71,3 +91,4 @@ class TZLoadingView {
         }
     }
 }
+

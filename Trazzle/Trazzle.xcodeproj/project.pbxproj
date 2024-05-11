@@ -80,22 +80,10 @@
 		99FD7C512BCD93F10051BDCE /* TZLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FD7C502BCD93F10051BDCE /* TZLoadingView.swift */; };
 		99FD7C542BCD948D0051BDCE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 99FD7C532BCD948D0051BDCE /* Lottie */; };
 		99FD7C562BCD96A20051BDCE /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 99FD7C552BCD96A20051BDCE /* loading.json */; };
-		C19E57962BE5E8AD00540FCC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C19E57952BE5E8AD00540FCC /* SnapKit */; };
-		C1EAB3B92BE5D5E60027C9CB /* NetworkLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EAB3B82BE5D5E60027C9CB /* NetworkLoggingPlugin.swift */; };
+		C1395EE72BE27FE300C2C06B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C1395EE62BE27FE300C2C06B /* SnapKit */; };
+		C17DA3822BEFB20000F65609 /* NetworkLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17DA3812BEFB20000F65609 /* NetworkLoggingPlugin.swift */; };
+		C1DA1D1F2BEFAD4700E8E994 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DA1D1E2BEFAD4700E8E994 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		C19E578A2BE5E6C600540FCC /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		134A7B662BB700EA0006522F /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
@@ -165,7 +153,8 @@
 		99FD7C4E2BCD8A610051BDCE /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		99FD7C502BCD93F10051BDCE /* TZLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZLoadingView.swift; sourceTree = "<group>"; };
 		99FD7C552BCD96A20051BDCE /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
-		C1EAB3B82BE5D5E60027C9CB /* NetworkLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLoggingPlugin.swift; sourceTree = "<group>"; };
+		C17DA3812BEFB20000F65609 /* NetworkLoggingPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLoggingPlugin.swift; sourceTree = "<group>"; };
+		C1DA1D1E2BEFAD4700E8E994 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,7 +171,7 @@
 				6C90AD9B2BB300BA00C4C411 /* GoogleSignInSwift in Frameworks */,
 				6C2A5E432BB2B96400E224BC /* KakaoSDK in Frameworks */,
 				6C2A5E452BB2B96400E224BC /* KakaoSDKAuth in Frameworks */,
-				C19E57962BE5E8AD00540FCC /* SnapKit in Frameworks */,
+				C1395EE72BE27FE300C2C06B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +183,6 @@
 			children = (
 				135AA98A2BB071EB00965EAA /* Trazzle */,
 				135AA9892BB071EB00965EAA /* Products */,
-				C19E578B2BE5E6D300540FCC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -363,6 +351,7 @@
 				6C902D582BB6850F002829AA /* View+Extension.swift */,
 				992E30502BCBFF280060B681 /* UIApplication+Extension.swift */,
 				992E306B2BCD68950060B681 /* UIImage+Extension.swift */,
+				C1DA1D1E2BEFAD4700E8E994 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -395,9 +384,9 @@
 		9915C6162BCA619B00C94273 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				C1EAB3B72BE5D5D80027C9CB /* Plugin */,
 				9915C61C2BCA6B3A00C94273 /* Model */,
 				9915C6192BCA630B00C94273 /* Targets */,
+				C17DA3832BEFB20400F65609 /* Plugin */,
 				9915C6272BCA741900C94273 /* NetworkService.swift */,
 			);
 			path = Network;
@@ -480,17 +469,10 @@
 			path = json;
 			sourceTree = "<group>";
 		};
-		C19E578B2BE5E6D300540FCC /* Frameworks */ = {
+		C17DA3832BEFB20400F65609 /* Plugin */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C1EAB3B72BE5D5D80027C9CB /* Plugin */ = {
-			isa = PBXGroup;
-			children = (
-				C1EAB3B82BE5D5E60027C9CB /* NetworkLoggingPlugin.swift */,
+				C17DA3812BEFB20000F65609 /* NetworkLoggingPlugin.swift */,
 			);
 			path = Plugin;
 			sourceTree = "<group>";
@@ -505,7 +487,6 @@
 				135AA9842BB071EB00965EAA /* Sources */,
 				135AA9852BB071EB00965EAA /* Frameworks */,
 				135AA9862BB071EB00965EAA /* Resources */,
-				C19E578A2BE5E6C600540FCC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -522,7 +503,7 @@
 				9915C6122BCA617500C94273 /* CombineMoya */,
 				9915C6142BCA617500C94273 /* Moya */,
 				99FD7C532BCD948D0051BDCE /* Lottie */,
-				C19E57952BE5E8AD00540FCC /* SnapKit */,
+				C1395EE62BE27FE300C2C06B /* SnapKit */,
 			);
 			productName = Trazzle;
 			productReference = 135AA9882BB071EB00965EAA /* Trazzle.app */;
@@ -558,7 +539,7 @@
 				6C90AD972BB300BA00C4C411 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				9915C6112BCA617500C94273 /* XCRemoteSwiftPackageReference "Moya" */,
 				99FD7C522BCD948D0051BDCE /* XCRemoteSwiftPackageReference "lottie-ios" */,
-				C19E57942BE5E8AD00540FCC /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C1395EE52BE27FE300C2C06B /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 135AA9892BB071EB00965EAA /* Products */;
 			projectDirPath = "";
@@ -601,7 +582,6 @@
 				992E30552BCC03420060B681 /* TravelRecordViewModel.swift in Sources */,
 				9969ED7A2BB7DFDF008C1B07 /* RecordTitleHeaderView.swift in Sources */,
 				136E2E352BB7B88F00359B48 /* RecordDetailView.swift in Sources */,
-				C1EAB3B92BE5D5E60027C9CB /* NetworkLoggingPlugin.swift in Sources */,
 				136E2E382BB7BD0B00359B48 /* SettingView.swift in Sources */,
 				992E30692BCD43180060B681 /* PermissionManager.swift in Sources */,
 				9915C6102BC6AF1200C94273 /* SnapCarouselView.swift in Sources */,
@@ -612,6 +592,8 @@
 				9969ED7E2BB7F23A008C1B07 /* WrappedHStack.swift in Sources */,
 				9915C6282BCA741900C94273 /* NetworkService.swift in Sources */,
 				136E2E3E2BB7C79800359B48 /* RecordImageSlideView.swift in Sources */,
+				C17DA3822BEFB20000F65609 /* NetworkLoggingPlugin.swift in Sources */,
+				C1DA1D1F2BEFAD4700E8E994 /* UIColor+Extension.swift in Sources */,
 				6C158B502BB68C72004B32CD /* MainButton.swift in Sources */,
 				6CB222342BB5A80000C5EC46 /* SearchBar.swift in Sources */,
 				6CB6F1242BB807E1006D212E /* Authorize.swift in Sources */,
@@ -915,7 +897,7 @@
 				minimumVersion = 4.4.2;
 			};
 		};
-		C19E57942BE5E8AD00540FCC /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		C1395EE52BE27FE300C2C06B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -971,9 +953,9 @@
 			package = 99FD7C522BCD948D0051BDCE /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
 		};
-		C19E57952BE5E8AD00540FCC /* SnapKit */ = {
+		C1395EE62BE27FE300C2C06B /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C19E57942BE5E8AD00540FCC /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = C1395EE52BE27FE300C2C06B /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
