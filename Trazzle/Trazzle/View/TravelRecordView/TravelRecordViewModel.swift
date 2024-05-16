@@ -14,10 +14,8 @@ class TravelRecordViewModel: ObservableObject {
     @Published var user: User
     
     init() {
-        print("TRV init")
         self.loginManager = LoginManager.shared
         self.user = loginManager.user ?? User(access_token: "", id: 0, account: "",
                                               name: "", profileImageURL: nil, intro: nil)
-        print("TRV self.user: \(user)")
     }
 }

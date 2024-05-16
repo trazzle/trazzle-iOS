@@ -9,36 +9,32 @@ import Foundation
 
 struct TZResponse<T: Codable> : Codable {
     let data: T?
-//    let errorData: ErrorData?
+    
+    let statusCode: Int
+    let errorMessage: String?
+    let errorDetails: String?
+    let path: String?
+    let timestamp: String?
     
     enum CodingKeys: String, CodingKey {
         case data
-//        , errorData
+        
+        case statusCode
+        case errorMessage
+        case errorDetails
+        case path
+        case timestamp
     }
     
     init(from decoder: any Decoder) throws {
         let values = try decoder.container(keyedBy:CodingKeys.self)
         self.data = try values.decode(T.self, forKey: .data)
-//        self.errorData = try values.decode(ErrorData.self, forKey: .errorData)
+        
+        self.statusCode = try values.decode(Int.self, forKey: .statusCode)
+        self.errorMessage = try values.decode(String.self, forKey: .errorMessage)
+        self.errorDetails = try values.decode(String.self, forKey: .errorDetails)
+        self.path = try values.decode(String.self, forKey: .path)
+        self.timestamp = try values.decode(String.self, forKey: .timestamp)
     }
-    
-//    struct ErrorData: Codable {
-//        let status: Int
-//        let timestamp: String
-//        let errors: [String:Any]
-//        
-//        enum CodingKeys: String, CodingKey {
-//            case status, timestamp, errors
-//        }
-//        
-//        init(from decoder: any Decoder) throws {
-//            let values = try decoder.container(keyedBy:CodingKeys.self)
-//            self.status = try values.decode(Int.self, forKey: .status)
-//            self.timestamp = try values.decode(String.self, forKey: .timestamp)
-//            self.errors = try values.decode([String:Any].self, forKey: .errors)
-//        }
-//    }
-    
-    
 }
 
