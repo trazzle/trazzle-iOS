@@ -13,8 +13,11 @@ struct GoogleButton: View {
     
     // GoogleSignInButtonViewModel 인스턴스 생성
     let viewModel = GoogleSignInButtonViewModel()
-    let loginSender = LoginSender()
-    let googleUrl = "https://trazzle.p-e.kr/api/users/sign-in/google"
+    let vm: LoginViewModel
+    
+    init(vm: LoginViewModel) {
+        self.vm = vm
+    }
     
     var body: some View {
         Button(action: {
@@ -68,7 +71,7 @@ struct GoogleButton: View {
                 
                 // 액세스 토큰
                 print("Access token: \(user.accessToken.tokenString)")
-                loginSender.sendData(url: googleUrl, accessToken: user.accessToken.tokenString, oauthProvider: "g")
+                vm.doGoogleLogin(accessToken: user.accessToken.tokenString)
                 
                 // 토큰을 사용하여 서버에 요청을 보낼 수 있습니다.
             } else {

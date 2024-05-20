@@ -47,8 +47,8 @@ struct LoginView: View {
             VStack {
                 Spacer()
                 KakaoButton(vm: vm)
-                GoogleButton()
-                AppleButton()
+                GoogleButton(vm: vm)
+                AppleButton(vm: vm)
                 
                 Text("로그인 및 회원가입시, 아래 내용에 동의하는 것으로 간주됩니다.")
                     .foregroundColor(.g400)
