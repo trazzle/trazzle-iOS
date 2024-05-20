@@ -14,7 +14,11 @@ enum TrazzleAPI {
     case kakaoLogin(accessToken: String)
     case googleLogin(accessToken: String)
     case appleLogin(accessToken: String)
+    // MARK: Profile
     case editProfile(name: String, intro: String, profileImageFile: String)
+    // MARK: Search
+    case countries(name: String, code: String, continent: String, cursor: Int)
+    case cities(countryCode: String, name: String, cursor: Int)
 }
 
 extension TrazzleAPI: TargetType {
@@ -31,11 +35,15 @@ extension TrazzleAPI: TargetType {
         case .appleLogin: return "users/sign-in/apple"
         // MARK: Profile
         case .editProfile: return "users/profile"
+        // MARK: Search
+        case .countries: return "countries"
+        case .cities: return "cities"
         }
     }
     
     var method: Moya.Method {
         switch self {
+        case .countries: return .get
         default: return .post
         }
     }
@@ -69,6 +77,20 @@ extension TrazzleAPI: TargetType {
             params["name"] = name
             params["intro"] = intro
             params["profileImageFile"] = profileImageFile
+            return .requestParameters(parameters: params, encoding: URLEncoding.default)
+            
+        // MARK: Search
+        case .countries(name: let name, code: let code, continent: let continent, cursor: let cursor):
+            params["name"] = name
+            params["code"] = code
+            params["continent"] = continent
+            params["cursor"] = cursor
+            return .requestParameters(parameters: params, encoding: URLEncoding.default)
+            
+        case .cities(countryCode: let countryCode, name: let name, cursor: let cursor):
+            params["name"] = name
+            params["countryCode"] = countryCode
+            params["cursor"] = cursor
             return .requestParameters(parameters: params, encoding: URLEncoding.default)
         }
     }

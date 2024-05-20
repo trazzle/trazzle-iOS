@@ -56,6 +56,27 @@ class NetworkService {
                                     intro: intro,
                                     profileImageFile: profileImageFile), type: User.self)
     }
+    
+    // MARK: Search
+    func searchCountries(name: String,
+                         code: String,
+                         continent: String, 
+                         cursor: Int) -> AnyPublisher<Country, TZError> {
+        return request(.countries(name: name,
+                                  code: code,
+                                  continent: continent,
+                                  cursor: cursor), type: Country.self)
+        
+    }
+    
+    func searchCities(countryCode: String,
+                      name: String,
+                      cursor: Int) -> AnyPublisher<City, TZError> {
+        return request(.cities(countryCode: countryCode,
+                               name: name,
+                               cursor: cursor), type: City.self)
+        
+    }
 }
 
 extension NetworkService {

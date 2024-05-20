@@ -11,6 +11,7 @@ import CodableGeoJSON
 struct HomeView: View {
     
     var homeVM = HomeViewModel.shared
+    @ObservedObject var countryVM = CountryListViewModel()
     
     // Title
     @Binding var titleText: String
@@ -69,7 +70,7 @@ struct HomeView: View {
                         },
                         content: {
                             if LoginManager.shared.isLoggedIn {
-                                CountryListView()
+                                CountryListView(vm: countryVM)
                             }
                             else {
                                 LoginView(isFullScreenOver: $isFullSceenOver)

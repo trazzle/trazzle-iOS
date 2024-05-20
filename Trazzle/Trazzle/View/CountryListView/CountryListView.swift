@@ -7,20 +7,20 @@
 
 import SwiftUI
 
-let countryURL = "https://trazzle.p-e.kr/api/countries"
-
 struct CountryListView: View {
-    
     @State private var results = [Country]()
+    let vm: CountryListViewModel
     
-    init() {
+    init(vm: CountryListViewModel) {
+        self.vm = vm
         UITableView.appearance().backgroundColor = .white
         UICollectionView.appearance().backgroundColor = .white
     }
     
     var body: some View {
         @State var isTapped = false
-        @State var searchText = ""
+        @State var searchText: String = ""
+        @State var continent: String = ""
         var count = results.count
         
         NavigationView {
@@ -89,12 +89,16 @@ struct CountryListView: View {
             .foregroundColor(.black)
              */
         }.task {
-            await loadData()
+            await loadData(searchText: searchText, continent: continent)
         }
         
     }
     
-    func loadData() async {
+    func loadData(searchText: String, continent: String) async {
+        
+        vm.searchCountries(name: "South Korea", code: "KR", continent: "Asia", cursor: 116)
+        
+        /*
         guard let url = URL(string: countryURL) else {
             print("Invalid URL")
             return
@@ -107,6 +111,9 @@ struct CountryListView: View {
         } catch {
             print(error)  // <--- important
         }
+         */
+        
+        
     }
     
 }
@@ -122,6 +129,3 @@ struct BackButton: View {
     }
 }
 
-#Preview {
-    CountryListView()
-}

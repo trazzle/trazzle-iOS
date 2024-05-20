@@ -33,6 +33,7 @@
 		6C2A5E472BB2B96400E224BC /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 6C2A5E462BB2B96400E224BC /* KakaoSDKCommon */; };
 		6C2A5E492BB2B98000E224BC /* KakaoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A5E482BB2B98000E224BC /* KakaoButton.swift */; };
 		6C2A5E4B2BB2B9E900E224BC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A5E4A2BB2B9E900E224BC /* LoginView.swift */; };
+		6C804D482BFB4E1D0026E985 /* CountryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C804D472BFB4E1D0026E985 /* CountryListViewModel.swift */; };
 		6C902D5A2BB68510002829AA /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C902D572BB6850F002829AA /* Color+Extension.swift */; };
 		6C902D5B2BB68510002829AA /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C902D582BB6850F002829AA /* View+Extension.swift */; };
 		6C90AD962BB2FF2700C4C411 /* GoogleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C90AD952BB2FF2700C4C411 /* GoogleButton.swift */; };
@@ -109,6 +110,7 @@
 		6C158B592BB708CC004B32CD /* LoginSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSender.swift; sourceTree = "<group>"; };
 		6C2A5E482BB2B98000E224BC /* KakaoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoButton.swift; sourceTree = "<group>"; };
 		6C2A5E4A2BB2B9E900E224BC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6C804D472BFB4E1D0026E985 /* CountryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModel.swift; sourceTree = "<group>"; };
 		6C8435012BB717AC00617BE0 /* Trazzle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Trazzle.entitlements; sourceTree = "<group>"; };
 		6C902D572BB6850F002829AA /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		6C902D582BB6850F002829AA /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
@@ -361,6 +363,7 @@
 			children = (
 				6CC20B272BB4637C003C3ABE /* CountryListView.swift */,
 				6C158B532BB6DD2C004B32CD /* CategoryView.swift */,
+				6C804D472BFB4E1D0026E985 /* CountryListViewModel.swift */,
 			);
 			path = CountryListView;
 			sourceTree = "<group>";
@@ -579,6 +582,7 @@
 				135AA9A82BB1DBEC00965EAA /* GeoJSONMapDrawer.swift in Sources */,
 				9969ED782BB7DE1A008C1B07 /* RecordUserInfoView.swift in Sources */,
 				99FD7C512BCD93F10051BDCE /* TZLoadingView.swift in Sources */,
+				6C804D482BFB4E1D0026E985 /* CountryListViewModel.swift in Sources */,
 				992E30552BCC03420060B681 /* TravelRecordViewModel.swift in Sources */,
 				9969ED7A2BB7DFDF008C1B07 /* RecordTitleHeaderView.swift in Sources */,
 				136E2E352BB7B88F00359B48 /* RecordDetailView.swift in Sources */,
