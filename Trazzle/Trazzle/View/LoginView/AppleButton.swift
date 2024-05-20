@@ -9,9 +9,12 @@ import AuthenticationServices
 import SwiftUI
 
 struct AppleButton: View {
-    let loginSender = LoginSender()
     let authorize = Authorize()
-    let appleUrl = "https://trazzle.p-e.kr/api/users/sign-in/apple"
+    let vm: LoginViewModel
+    
+    init(vm: LoginViewModel) {
+        self.vm = vm
+    }
     
     var body: some View {
         Button(action: {
@@ -40,7 +43,8 @@ struct AppleButton: View {
                     authorize.completionHandler = { tokenString in
                         // completionHandler를 통해 전달받은 데이터 처리
                         if let token = tokenString {
-                            loginSender.sendData(url: appleUrl, accessToken: token, oauthProvider: "a")
+                            print(token)
+                            vm.doAppleLogin(accessToken: token)
                         } else {
                             print("애플 token nil")
                         }

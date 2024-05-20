@@ -36,6 +36,14 @@ class NetworkService {
         return request(.kakaoLogin(accessToken: accessToken), type: User.self)
     }
     
+    func googleLogin(accessToken: String) -> AnyPublisher<User, TZError> {
+        return request(.googleLogin(accessToken: accessToken), type: User.self)
+    }
+    
+    func appleLogin(accessToken: String) -> AnyPublisher<User, TZError> {
+        return request(.kakaoLogin(accessToken: accessToken), type: User.self)
+    }
+    
     func testLogin(account: String) -> AnyPublisher<User, TZError> {
         return request(.testLogin(account: account), type: User.self)
     }

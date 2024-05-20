@@ -69,7 +69,7 @@ struct HomeView: View {
                         },
                         content: {
                             if LoginManager.shared.isLoggedIn {
-                                
+                                CountryListView()
                             }
                             else {
                                 LoginView(isFullScreenOver: $isFullSceenOver)

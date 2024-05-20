@@ -12,6 +12,8 @@ enum TrazzleAPI {
     // MARK: Login
     case testLogin(account: String)
     case kakaoLogin(accessToken: String)
+    case googleLogin(accessToken: String)
+    case appleLogin(accessToken: String)
     case editProfile(name: String, intro: String, profileImageFile: String)
 }
 
@@ -25,6 +27,8 @@ extension TrazzleAPI: TargetType {
         // MARK: Login
         case .testLogin: return "users/sign-in/account"
         case .kakaoLogin: return "users/sign-in/kakao"
+        case .googleLogin: return "users/sign-in/google"
+        case .appleLogin: return "users/sign-in/apple"
         // MARK: Profile
         case .editProfile: return "users/profile"
         }
@@ -47,6 +51,16 @@ extension TrazzleAPI: TargetType {
         case let .kakaoLogin(accessToken):
             params["accessToken"] = accessToken
             params["oauthProvider"] = LoginProviderType.kakao.typeName()
+            return .requestParameters(parameters: params, encoding: URLEncoding.default)
+            
+        case let .googleLogin(accessToken):
+            params["accessToken"] = accessToken
+            params["oauthProvider"] = LoginProviderType.google.typeName()
+            return .requestParameters(parameters: params, encoding: URLEncoding.default)
+            
+        case let .appleLogin(accessToken):
+            params["accessToken"] = accessToken
+            params["oauthProvider"] = LoginProviderType.apple.typeName()
             return .requestParameters(parameters: params, encoding: URLEncoding.default)
             
         // MARK: Profile
